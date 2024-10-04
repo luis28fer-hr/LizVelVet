@@ -21,28 +21,30 @@ setInterval(cambiarPalabra, 5000);
 
 
 
+// Carrusel 1
 let currentIndex = 0;
-const slider = document.querySelector('.carousel-slider');
-const cards = document.querySelectorAll('.card');
-const cardWidth = cards[0].offsetWidth;  // Ancho de una tarjeta
-const totalCards = cards.length;
+const slider1 = document.querySelector('.carousel-slider');
+const cards1 = document.querySelectorAll('.card');
+const cardWidth1 = cards1[0].offsetWidth;  // Ancho de una tarjeta
+const totalCards1 = cards1.length;
 
-function slideCarousel() {
+function slideCarousel1() {
   currentIndex++;
-  if (currentIndex >= totalCards - 1) {
+  // Cambiamos el reinicio: Si llegamos al final, reiniciamos al principio
+  if (currentIndex >= totalCards1-5) {
     currentIndex = 0;  // Reiniciar al principio cuando llegamos al final
   }
-  slider.style.transform = `translateX(-${currentIndex * cardWidth}px)`;
+  // Aplica la transformación solo si es válida
+  slider1.style.transform = `translateX(-${currentIndex * cardWidth1}px)`;
 }
 
-setInterval(slideCarousel, 6500);  // Cambia la tarjeta cada 3 segundos
+setInterval(slideCarousel1, 6500);  // Cambia la tarjeta cada 6.5 segundos
 
-
-
+// Carrusel 2
 let currentIndex2 = 0;
 const sliderbreak = document.querySelector('.break');
-const cardsbreak = document.querySelectorAll('.container-img');
-const cardWidthbreak = cardsbreak[0].offsetWidth;  // Ancho de una tarjeta
+let cardsbreak = document.querySelectorAll('.container-img');  // Actualizar la referencia después de clonar
+let cardWidthbreak = cardsbreak[0].offsetWidth;  // Ancho de una tarjeta
 const totalCardsbreak = cardsbreak.length;
 
 // Duplicar las imágenes
@@ -52,9 +54,11 @@ for (let x = 0; x < 3; x++) {
     sliderbreak.appendChild(clone);
   }
 }
-  
-
-const totalCardsWithClones = cardsbreak.length * 4;  // Total de tarjetas incluyendo las copias
+//*
+// Necesitas recalcular los elementos después de clonar
+cardsbreak = document.querySelectorAll('.container-img');
+cardWidthbreak = cardsbreak[0].offsetWidth;
+const totalCardsWithClones = cardsbreak.length;
 
 function slideCarouselbreak() {
   currentIndex2++;
