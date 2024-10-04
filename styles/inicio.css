@@ -1,0 +1,152 @@
+:root {
+    --primary-color: #FF4394;
+    --secondary-color: #FF2382;
+    --text-color: #020202;
+    --background-color: #EBF5EE;
+    --background-color2: #F7F9F9;
+  }
+
+.home{
+    width: 100%;
+    height: 100vh;
+    padding-top: 8vh;
+    background-color: var(--background-color);
+    display: flex;
+}
+
+.home .presentation{
+    position: relative;
+    width: 45%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    gap: 0.5rem;
+}
+
+.presentation .text{
+    width: 75%;
+    z-index: 5;
+    margin-top: 2.5rem;
+}
+.presentation .text h2{
+    font-size: 1.9rem;
+    font-weight: 500; 
+    line-height: 2.1rem;
+    z-index: 5;
+}
+.presentation .text h2 div{
+    display: inline-block;
+    width: 13rem;
+    text-align: center;
+    background-color: var(--secondary-color);
+    font-weight: 500;
+    font-style: italic;
+    color: var(--background-color);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.presentation .text h2 div:hover{
+    background-color: #df1c70;
+}
+
+
+.logo{
+    width: 75%;
+    color: var(--text-color);
+    font-size: 0.63rem;
+    font-family: "Moulpali", sans-serif;
+    z-index: 5;
+}
+
+.presentation .logo span{
+    color: var(--primary-color);
+    font-size: 3.7rem;
+    font-family: "Mr Dafoe", cursive;
+    font-weight: 400;
+    cursor: pointer;
+    margin-right: 0.7rem;
+    transition: all 0.5s ease-in;
+}
+.presentation .logo span:hover{
+    color:  var(--secondary-color);
+    font-size: 3.72rem;
+}
+
+
+.presentation .info{
+    position: relative;
+    margin-top: 1.5rem;
+    width: 75%;
+    height: 15%;
+    padding: 0.5rem 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+    gap: 2.5rem;
+    z-index: 5;
+
+}
+
+.presentation .info div{
+    cursor: pointer;
+    width: auto;
+    height: 100%;
+    font-size: 0.95rem;
+    font-weight: 600;
+    transition: all 0.7s ease;
+}
+.presentation .info div:hover{
+    transform: translateY(1rem);
+}
+.presentation .info div p{
+    color: var(--secondary-color);
+    font-weight: 700;
+    font-size: 2rem;
+    font-style: italic;
+}
+
+
+.presentation .svghome{
+    width: 110%;
+    height: 80%;
+    position: absolute;
+    top: 0;
+    opacity: .9;
+}
+
+.home .collageimg{
+    position: relative;
+    width: 55%;
+    height: 100%;
+    overflow: hidden;
+}
+.home .collageimg .carr{
+    margin-top: -6vh;
+    width: 100%;
+    height: 98vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(2, 50%);
+    }
+
+.carr div{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    transition: all 0.5s ease;
+}
+
+.carr div:hover{
+    transform: scale(1.07);
+    z-index: 5;
+}
+.carr div img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 40% 45%;
+}
