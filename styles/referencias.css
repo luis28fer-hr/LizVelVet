@@ -1,0 +1,108 @@
+:root {
+    --primary-color: #FF4394;
+    --secondary-color: #FF2382;
+    --text-color: #020202;
+    --background-color: #EBF5EE;
+    --background-color2: #F7F9F9;
+}
+
+
+.referencias{
+    position: relative;
+    width: 100%;
+    height: 110vh;
+    background-color: var(--background-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    overflow: hidden;
+}
+
+.referencias .referencia-fil{
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+.referencias .container-referencias{
+    z-index: 5;
+    width: 80%;
+    height: 55%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 50%);
+    gap: 1.2rem;
+}
+.container-referencias .container-card{
+    background-color: var(--background-color2);
+    border-radius: 2px;
+    box-shadow: -5px 5px 10px 3px #ff238269;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.8rem;
+    transition: all 0.4s ease-in;
+}
+
+.container-referencias .container-card:hover{
+    box-shadow: -5px 5px 10px 3px #ff23829d;
+    transform: scale(1.01);
+    cursor: pointer;
+}
+
+.container-card .card-img{
+    width: 28%;
+    height: 78%;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.card-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.container-card .info-card{
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    gap: 0.7rem;
+}
+.info-card .title{
+    font-family: "Moulpali", sans-serif;
+    font-size: 1.2rem;
+    font-weight: 500;
+    width: 100%;
+}
+.info-card .des{
+    width: 100%;
+    text-align: left;
+    font-size: 0.9rem
+}
+
+.info-card .icons{
+    padding: 0.5em 0;
+    width: 100%;
+    display: flex;
+    gap: 0.5rem;
+}
+.info-card .icons i{
+    font-size: 1.1rem;
+    color: rgb(39, 39, 39);
+    transition: all 0.3s ease-in-out
+}
+.info-card .icons i:hover{
+    color: var(--primary-color);
+    transform: scale(1.1);
+}
