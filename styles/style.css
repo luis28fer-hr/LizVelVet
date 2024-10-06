@@ -17,6 +17,7 @@ html{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    text-decoration: none;
 }
 *::selection{
     background-color:#ff43959d;

@@ -50,23 +50,36 @@
 .button div{
     width: 55%;
     padding: 0.5rem;
+    border: 3px solid var(--primary-color);
+    transition: all 0.4s ease-in-out;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+}
+
+.button div a{
+    width: 100%;
     font-size: 1.2rem;
     text-transform: uppercase;
     text-align: center;
     color: var(--primary-color);
     font-weight: 600;
     letter-spacing: -1px;
-    border: 3px solid var(--primary-color);
     transition: all 0.4s ease-in-out;
-    border-radius: 3px;
+
 }
+
 .button div:hover{
     cursor: pointer;
     transform: scaleX(1.01) translateY(0.6rem);
-    color: var(--background-color);
     border: 3px solid var(--secondary-color);
     background-color: var(--secondary-color);
 }
+.button div:hover a{
+    color: var(--background-color);
+
+}
+
 
 .services .container-carrusel{
     position: relative;

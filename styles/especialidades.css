@@ -8,7 +8,22 @@
 
 
 .especialidades{
+  position: relative;
     width: 100%;
-    height: 100vh;
-    background-color: var(--background-color);
+    height: 130vh;
+    background-color: var(--background-color2);
+    overflow: hidden;
+}
+.especialidades .especialidades-fil{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  bottom: 0;
+}
+.especialidades-fil img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.6;
 }

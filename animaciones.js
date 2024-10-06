@@ -31,7 +31,7 @@ const totalCards1 = cards1.length;
 function slideCarousel1() {
   currentIndex++;
   // Cambiamos el reinicio: Si llegamos al final, reiniciamos al principio
-  if (currentIndex >= totalCards1-5) {
+  if (currentIndex >= totalCards1-1) {
     currentIndex = 0;  // Reiniciar al principio cuando llegamos al final
   }
   // Aplica la transformación solo si es válida
