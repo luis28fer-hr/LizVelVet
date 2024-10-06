@@ -1,0 +1,28 @@
+:root {
+    --primary-color: #FF4394;
+    --secondary-color: #FF2382;
+    --text-color: #020202;
+    --background-color: #EBF5EE;
+    --background-color2: #F7F9F9;
+}
+
+.visitanos{
+    width: 100%;
+    height: 180vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.1rem;
+    background-color: var(--background-color);
+}
+
+.visitanos p{
+    width: 80%;
+    text-align: center;
+    font-size: 1.1rem;
+}
+.visitanos iframe{
+    width: 100%;
+    height: 65%;
+}
