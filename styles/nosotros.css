@@ -19,9 +19,7 @@
 
 .nosotros .title{
     width: 100%;
-    height: auto;
     display: flex;
-    width: 50%;
     height: auto;
     align-items: center;
     justify-content: center;
@@ -150,4 +148,129 @@
 .redes i:hover{
     transform: scale(1.1);
     color: var(--primary-color);
+}
+
+
+@media screen and (max-width: 480px) {
+
+    .nosotros{
+        width: 100%;
+        height: 90vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+    }
+    
+    .nosotros .title{
+        width: 100%;
+        height: 12%;
+        display: flex;
+        align-items: start;
+        justify-content: center;
+    }
+    .title .question{
+        font-size: 2.5rem;
+    }
+    .title .question2{
+        margin-top: 2.0rem;
+        font-size: 2.5rem;
+    }
+     .title .whatis {
+        margin-top: 0rem;
+        color: #000;
+        font-size: 1.5rem;
+        letter-spacing: -1px;
+     }
+     .title .liz {
+        margin-top: 1.7rem;
+        margin-left: -0.3rem;
+        font-size: 2.5rem;
+     }
+    .title .liz:hover{
+        font-size: 2.6rem;
+    }
+    
+     .title .studio{
+        margin-top: 3rem;
+        margin-left: 1rem;
+        color: #000;
+        font-size: 0.8rem;
+     }
+    
+     .nosotros .weinfo{
+        width: 100%;
+        height: 88%;
+        display: flex;
+        flex-direction: column-reverse;
+        margin-top: 0rem;
+
+     }
+    
+     .weinfo .infofoto{
+        width: 100%;
+        height: 50%;
+    
+     }
+    
+     .infofoto .fil{
+        position: relative;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+     }
+    
+     .weinfo .infofoto .fil img{
+        width: 62%;
+        height: 50%;
+     }
+     
+     .fil .fil_1{
+        position: absolute;
+        width: 62%;
+        height: 50%;
+        margin: -3.2rem 0 0 -3.2rem;
+        opacity: 0.7;
+     } 
+     .fil .fil_2{
+        position: absolute;
+        width: 62%;
+        height: 50%;
+        margin: 3.2rem -3.2rem 0 0;
+        opacity: 0.5;
+     }
+    
+    .nosotros .weinfo .infodes{
+        width: 100%;
+        height: 50%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 0.7rem;
+    }
+    .infodes p{
+        width: 89%;
+        text-align: center;
+        font-size: 1rem;
+        line-height: 1.2rem;
+    }
+    .infodes .redes{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0.2rem 0;
+        gap: 0.5rem;
+    }
+    .redes i{
+        font-size: 1.1rem;
+    }
+    .redes i:hover{
+        transform: scale(1.05);
+    }
+    
+
 }

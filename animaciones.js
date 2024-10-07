@@ -31,7 +31,7 @@ const totalCards1 = cards1.length;
 function slideCarousel1() {
   currentIndex++;
   // Cambiamos el reinicio: Si llegamos al final, reiniciamos al principio
-  if (currentIndex >= totalCards1-1) {
+  if (currentIndex >= totalCards1) {
     currentIndex = 0;  // Reiniciar al principio cuando llegamos al final
   }
   // Aplica la transformación solo si es válida
@@ -39,6 +39,8 @@ function slideCarousel1() {
 }
 
 setInterval(slideCarousel1, 6500);  // Cambia la tarjeta cada 6.5 segundos
+
+
 
 // Carrusel 2
 let currentIndex2 = 0;
@@ -79,3 +81,25 @@ function slideCarouselbreak() {
 }
 
 setInterval(slideCarouselbreak, 3000);  // Cambia la tarjeta cada 3 segundos
+
+
+
+
+const navLinks = document.querySelectorAll('.link');
+
+// Función para eliminar la clase activa de todos los enlaces
+function removeActiveClass() {
+    navLinks.forEach(link => {
+        link.classList.remove('link.active');
+    });
+}
+
+// Escucha el clic en cada enlace
+navLinks.forEach(link => {
+    link.addEventListener('link.active', function() {
+        // Primero, eliminamos la clase activa de todos
+        removeActiveClass();
+        // Luego, agregamos la clase activa al enlace clicado
+        link.classList.add('link.active');
+    });
+});

@@ -26,3 +26,26 @@
     width: 100%;
     height: 65%;
 }
+
+
+
+
+@media screen and (max-width: 480px) {
+    .visitanos{
+        width: 100%;
+        height: 140vh;
+        gap: 1rem;
+    }
+    
+    .visitanos p{
+        width: 90%;
+        text-align: center;
+        font-size: 1rem;
+    }
+    .visitanos iframe{
+        width: 100%;
+        height: 70%;
+    }
+    
+    
+}

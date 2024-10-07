@@ -150,3 +150,137 @@
     object-fit: cover;
     object-position: 40% 45%;
 }
+
+
+@media screen and (max-width: 480px) {
+    .home{
+        width: 100%;
+        height: 100vh;
+        padding-top: 7vh;
+        flex-direction:column-reverse;
+    }
+    
+    .home .presentation{
+        width: 100%;
+        height: 40%;
+        gap: 0.5rem;
+    }
+    .medio {
+        order: 1;
+    }
+
+    .arriba {
+        order: 2;
+    }
+
+    .abajo {
+        order: 3;
+    }
+    
+    .presentation .text{
+        width: 95%;
+        z-index: 5;
+        margin-top: 0rem;
+        text-align: center;
+    }
+
+    .presentation .text h2{
+        font-size: 1rem;
+        font-weight: 500; 
+        line-height: 1.25rem;
+    }
+    .presentation .text h2 div{
+        width: 8rem;
+        font-weight: 500;
+    }
+    .presentation .text h2 div:hover{
+        background-color: #df1c70;
+    }
+    
+    
+    .logo{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 0.5rem;
+    }
+    
+    .presentation .logo span{
+        font-size: 3rem;
+        margin-right: 0.6rem;
+    }
+    .presentation .logo span:hover{
+        font-size: 3.1rem;
+    }
+    
+    
+    .presentation .info{
+        position: relative;
+        margin-top: 1rem;
+        width: 90%;
+        height: auto;
+        padding: 0;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        gap: 0.2rem;    
+    }
+    
+    .presentation .info div{
+        width: 33%;
+        height: 100%;
+        font-size: 0.9rem;
+        transition: all 0.7s ease;
+    }
+    .presentation .info div:hover{
+        transform: translateY(0.5rem);
+    }
+    .presentation .info div p{
+        font-weight: 700;
+        font-size: 1.5rem;
+        font-style: italic;
+        text-align: center;
+    }
+
+    .abajo .arriba{
+        order: 1;
+    }
+    .abajo .medio{
+        order: 3;
+    }
+    .abajo .abajo{
+        order: 2;
+    }
+    
+    
+    .presentation .svghome{
+        width: 100%;
+        height: 60%;
+    }
+    
+    .home .collageimg{
+        width: 100%;
+        height: 60%;
+    }
+    .home .collageimg .carr{
+        margin-top: 0vh;
+        width: 100%;
+        height: 100%;
+        }
+    
+    
+    .carr div:hover{
+        transform: scale(1.05);
+        z-index: 5;
+    }
+
+    .carr div img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: 40% 50%;
+    }
+
+
+}
