@@ -155,7 +155,7 @@
 
     .nosotros{
         width: 100%;
-        height: 90vh;
+        height: 115vh;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -165,7 +165,7 @@
     
     .nosotros .title{
         width: 100%;
-        height: 12%;
+        height: 10%;
         display: flex;
         align-items: start;
         justify-content: center;
@@ -186,22 +186,22 @@
      .title .liz {
         margin-top: 1.7rem;
         margin-left: -0.3rem;
-        font-size: 2.5rem;
+        font-size: 2.8rem;
      }
     .title .liz:hover{
         font-size: 2.6rem;
     }
     
      .title .studio{
-        margin-top: 3rem;
-        margin-left: 1rem;
+        margin-top: 3.45rem;
+        margin-left: 0.7rem;
         color: #000;
         font-size: 0.8rem;
      }
     
      .nosotros .weinfo{
         width: 100%;
-        height: 88%;
+        height: 75%;
         display: flex;
         flex-direction: column-reverse;
         margin-top: 0rem;
@@ -211,7 +211,6 @@
      .weinfo .infofoto{
         width: 100%;
         height: 50%;
-    
      }
     
      .infofoto .fil{
@@ -255,7 +254,7 @@
         width: 89%;
         text-align: center;
         font-size: 1rem;
-        line-height: 1.2rem;
+        line-height: 1.25rem;
     }
     .infodes .redes{
         width: 100%;
