@@ -322,10 +322,20 @@
         padding: 0 0.5rem;
         line-height: .95rem;
         font-size: 0.85rem;
+        transition: all .3s ease;
+
     }
     
     .card:hover .card-des h2{
         font-size: 1.75rem;
+        transition: all .3s ease-in;
+
     }
+    .card:hover .card-des p{
+        font-weight: 400;
+        transition: all .3s ease-in;
+
+    }
+    
     
 }
