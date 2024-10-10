@@ -197,7 +197,7 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        gap: 1rem;
+        gap: 1.5rem;
         padding: 0;
     }
     
@@ -259,7 +259,7 @@
         width: 16rem;
         height: 15.7rem;
         border-radius: 50%;
-        border: solid 8px #ff4395c7;
+        border: solid 5px #ff4395c7;
     }
     
     .academia-foto ._foto img{
@@ -281,7 +281,7 @@
     }
     
     .academia-foto ._img:hover{
-        border:solid 4px #ff4395;
+        border:solid 3px #ff4395;
         border-left: 0;
         border-right: 0;
         cursor: pointer;
