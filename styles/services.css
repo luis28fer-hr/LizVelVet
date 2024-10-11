@@ -280,6 +280,9 @@
         height: 90%;
         gap: 0.3rem;
       }
+      .carousel-slider {
+        transition: transform 6.5s linear;   /* Animación suave al deslizar */
+      }
     
       /* Tarjetas individuales */
     .card {
