@@ -104,8 +104,8 @@
 }
 .presentation .info div p{
     color: var(--secondary-color);
-    font-weight: 700;
-    font-size: 2rem;
+    font-weight: 600;
+    font-size: 1.9rem;
     font-style: italic;
 }
 

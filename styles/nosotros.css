@@ -141,12 +141,12 @@
     gap: 0.5rem;
 }
 .redes i{
-    font-size: 1.3rem;
+    font-size: 1.65rem;
     color: #d0d3d4;
     transition: all 0.3s ease;
 }
 .redes i:hover{
-    transform: scale(1.1);
+    transform: scale(0.9);
     color: var(--primary-color);
 }
 
