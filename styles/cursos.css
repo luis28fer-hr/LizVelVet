@@ -262,7 +262,7 @@
     }
 
     .curso-info .curso-footer .curso-button {
-        width: 45%;
+        width: 52%;
         padding: 0.5rem 0.8rem;
         font-size: 0.95rem;
         font-weight: 600;
@@ -274,7 +274,7 @@
     }
 
     .curso-footer .curso-icons {
-        width: 60%;
+        width: 48%;
         gap: 0.15rem;
         padding: 0 0.4rem;
     }
