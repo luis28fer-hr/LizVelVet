@@ -32,18 +32,18 @@
 }
 
 .miacademia-info .title .whatis {
-    font-size: 2.9rem;
+    font-size: 2.7rem;
     letter-spacing: -1px;
 }
 
 .miacademia-info .title .liz {
-    margin-left: -1.3rem;
-    margin-top: 2.2rem;
+    margin-left: -1rem;
+    margin-top: 1rem;
 }
 
 .miacademia-info .title .studio {
     margin-left: 1rem;
-    margin-top: 4.4rem;
+    margin-top: 3.2rem;
 
 
 }
@@ -82,7 +82,7 @@
     width: 15em;
     height: 14.8rem;
     border-radius: 50%;
-    border: solid 8px #ff4395c7;
+    border: solid 6px #ff4395c7;
     transition: all 0.3s ease-in;
     z-index: 5;
 }
@@ -96,9 +96,9 @@
 }
 .academia-foto ._img{
     margin-bottom: 2rem;
-    border-top:solid 7px #ff439594;
-    border-bottom:solid 7px #ff439594;
-    border-left:solid 7px #ff439594;
+    border-top:solid 6px #ff439594;
+    border-bottom:solid 6px #ff439594;
+    border-left:solid 6px #ff439594;
     border-radius: 2px;
     width: 85%;
     height: 80%;
@@ -108,7 +108,7 @@
 }
 .academia-foto ._foto:hover{
     cursor: pointer;
-    border: solid 8px #ff4395;
+    border: solid 6px #ff4395;
     transform: scale(1.025) translateY(0.5rem);
 }
 
@@ -121,9 +121,9 @@
 }
 
 .academia-foto ._img:hover{
-    border-top:solid 7px #ff4395;
-    border-bottom:solid 7px #ff4395;
-    border-left:solid 7px #ff4395;
+    border-top:solid 6px #ff4395;
+    border-bottom:solid 6px #ff4395;
+    border-left:solid 6px #ff4395;
     cursor: pointer;
     transform: scale(1.025) translateY(0.5rem);
 }
@@ -143,7 +143,7 @@
 .informacion-academia .card-info{
     width: 18%;
     height: 50%;
-    border: solid 5px var(--primary-color);
+    border: solid 4px var(--primary-color);
     border-radius: 2px;
     display: flex;
     flex-direction: column;
@@ -191,7 +191,7 @@
     }
     
     .miacademia .miacademia-info {
-        width: 85%;
+        width: 90%;
         height: 40%;
         display: flex;
         flex-direction: column;
@@ -210,26 +210,26 @@
     }
     
     .miacademia-info .title .whatis {
-        font-size: 2rem;
+        font-size: 1.8rem;
         letter-spacing: -1px;
     }
     
     .miacademia-info .title .liz {
-        font-size: 3rem;
-        margin-left: -.5rem;
-        margin-top: 2rem;
+        font-size: 2.8rem;
+        margin-left: -.7rem;
+        margin-top: 3.5rem;
     }
     
     .miacademia-info .title .studio {
         margin-left: .5rem;
-        margin-top: 3.5rem;
+        margin-top: 4.75rem;
     
     
     }
     
     .miacademia-info .info {
         padding: 0rem;
-        width: 98%;
+        width: 95%;
         font-size: 1rem;
         line-height: 1.25rem;
         font-weight: 400;

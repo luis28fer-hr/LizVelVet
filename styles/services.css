@@ -25,10 +25,17 @@
 }
 .container-info .title{
     display: flex;
-    width: 72%;
+    width: 73%;
     align-items: center;
     justify-content: start;
 }
+.services .container-info .title .liz{
+    font-family: "Mr Dafoe", cursive;
+    letter-spacing: -3px;
+    font-size: 3.3rem;
+}
+
+
 .container-info .info{
     width: 72%;
     font-size: 1.1rem;
@@ -156,7 +163,8 @@
     flex-direction: column;
     align-items: center;
     justify-content: start;
-    padding: 0.2rem 0;
+    gap: -.5rem;
+    padding: 0;
 }
 
 .card:hover .card-des{
@@ -165,7 +173,7 @@
 
 .card .card-des h2{
     color: var(--primary-color);
-    font-size: 1.7rem;
+    font-size: 1.65rem;
     font-family: "Mr Dafoe", cursive;
     font-weight: 500;
     transition: all .3s ease-in
@@ -174,13 +182,13 @@
 
 .card .card-des p{
     padding: 0 0.5rem;
-    line-height: .95rem;
+    line-height: .85rem;
     text-align: center;
-    font-size: 0.87rem;
+    font-size: 0.85rem;
     font-style: italic;
     font-weight: 400;
-    transition: all .3s ease-in
-
+    transition: all .3s ease-in;
+    margin-top: -.1rem;
 }
 
 .card:hover .card-des h2{
@@ -205,11 +213,24 @@
         gap: 0.6rem;
     }
     .container-info .title{
-        width: 81%;
-        justify-content: start;
+        width: 95%;
+        justify-content: center;
+        padding: 0;
     }
 
-    
+    .container-info .title .whatis{
+        margin-left: -.8rem;
+    }
+
+    .container-info .title .liz{
+        margin-top: 3rem;
+        margin-left: -.8rem;
+    }
+    .container-info .title .studio{
+        margin-top: 4.6rem;
+
+    }
+
     .container-info .info{
         width: 80%;
         font-size: 1.05rem;
@@ -314,6 +335,7 @@
         padding: 0rem 0;
         align-items: center;
         justify-content: center;
+        gap: 0.3rem;
     }
     
     .card .card-des h2{

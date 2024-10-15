@@ -41,9 +41,8 @@
     margin-top: -.7rem;
     color: #000;
     font-size: 2.5rem;
-    font-family: "Moulpali", sans-serif;
-    font-weight: 500;
-    letter-spacing: -1px;
+    font-weight: 400;
+    letter-spacing: -3px;
  }
  .title .liz {
     margin-top: 2.5rem;
@@ -174,7 +173,7 @@
         font-size: 2.5rem;
     }
     .title .question2{
-        margin-top: 2.0rem;
+        margin-top: 1rem;
         font-size: 2.5rem;
     }
      .title .whatis {
@@ -184,16 +183,16 @@
         letter-spacing: -1px;
      }
      .title .liz {
-        margin-top: 1.7rem;
+        margin-top: 0.5rem;
         margin-left: -0.3rem;
-        font-size: 2.8rem;
+        font-size: 2.6rem;
      }
     .title .liz:hover{
-        font-size: 2.6rem;
+        font-size: 2.65rem;
     }
     
      .title .studio{
-        margin-top: 3.45rem;
+        margin-top: 2.15rem;
         margin-left: 0.7rem;
         color: #000;
         font-size: 0.8rem;

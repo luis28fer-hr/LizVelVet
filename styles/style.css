@@ -99,7 +99,7 @@ footer {
     border-top: solid 3px var(--primary-color);
     display: flex;
     align-items: end;
-    justify-content: start;
+    justify-content: space-between;
     padding: 3.5rem;
 }
 
@@ -111,6 +111,34 @@ footer p {
 
 footer p span {
     font-weight: 600
+}
+
+footer div{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: end;
+    gap: 0.5rem;
+}
+
+footer div a{
+    font-size: .9rem;
+    color: var(--text-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    transition: all 0.3s ease-in;
+}
+
+footer div a i{
+    font-size: 1.05rem;
+}
+
+footer div a:hover{
+    color: var(--primary-color);
+    transform: scale(1.05) translateX(-10px);
+    font-weight: 600;
 }
 
 
@@ -160,18 +188,40 @@ footer p span {
 
     footer {
         width: 100%;
-        height: 33vh;
-        padding: .5rem 1.5rem 2.5rem 1.5rem;
+        height: 38vh;
+        padding: .5rem 1.5rem 3rem 1.5rem;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: end;
+        gap: 0.5rem;
     }
 
     footer p {
-        width: 100%;
+        width: 90%;
         font-size: 0.73rem;
         font-weight: 500;
     }
 
     footer p span {
         font-weight: 600
+    }
+    footer div{
+        width: 100%;
+        gap: 0.2rem;
+    }
+    
+    footer div a{
+        font-size: .78rem;
+        gap: 0.5rem;
+    }
+    
+    footer div a i{
+        font-size: 1rem;
+    }
+    
+    footer div a:hover{
+        transform: scale(1.01) translateX(-8px);
     }
 
 
