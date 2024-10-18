@@ -1,29 +1,177 @@
 :root {
-    --primary-color: #FF4394;
-    --secondary-color: #FF2382;
-    --text-color: #020202;
-    --background-color: #EBF5EE;
-    --background-color2: #F7F9F9;
-  }
-
-
-.especialidades{
-  position: relative;
-    width: 100%;
-    height: 130vh;
-    background-color: var(--background-color2);
-    overflow: hidden;
+  --primary-color: #FF4394;
+  --secondary-color: #FF2382;
+  --text-color: #020202;
+  --background-color: #EBF5EE;
+  --background-color2: #F7F9F9;
 }
-.especialidades .especialidades-fil{
+
+
+.especialidades {
+  position: relative;
+  width: 100%;
+  height: 500vh;
+  background-color: var(--background-color2);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  padding: 2.5rem 0rem;
+  gap: 1.5rem;
+}
+
+.especialidades .title {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.especialidades .title .liz {
+  margin-top: 2.7rem;
+  margin-left: -1rem;
+}
+
+.especialidades .container-especialidades {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  padding: 0.5rem 0 0.5rem 1.5rem;
+  scroll-behavior: smooth;
+  overflow: hidden;
+  scroll-behavior: smooth;
+  margin-bottom: 4rem;
+}
+
+.no-select {
+  user-select: none; /* En la mayoría de los navegadores */
+  -webkit-user-select: none; /* Soporte para navegadores basados en WebKit (Chrome, Safari) */
+  -moz-user-select: none; /* Soporte para Firefox */
+  -ms-user-select: none; /* Soporte para Internet Explorer/Edge */
+}
+
+
+.container-especialidades .slider-especialidades {
+  display: flex;
+  gap: 1rem;
+  cursor: grab;
+}
+
+.slider-especialidades .card-especialidades{
+  height: 29rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.cards-pestañas{
+  width: 19.6rem;
+}
+
+.cards-unas{
+  width: 19.6rem;
+}
+
+.card-especialidades .especialidades-img{
+  width: 98%;
+  height: 65%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  border-radius: 36px;
+}
+.especialidades-img img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  overflow: hidden;
+
+}
+.especialidades-img img:hover{
+  cursor: pointer;
+  pointer-events: none;
+
+}
+
+.card-especialidades .especialidades-des{
+  width: 100%;
+  height: 25%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+}
+
+.especialidades-des h3{
+  width: 100%;
+  text-align: center;
+  font-family: "Mr Dafoe", cursive;
+  font-size: 1.85rem;
+  font-weight: 500;
+  color: var(--primary-color);
+}
+.especialidades-des p{
+  width: 85%;
+  text-align: center;
+  font-size: 0.85rem;
+  line-height: 1rem;
+}
+
+.especialidades-des p span{
+  font-weight: 600;
+  display: block;
+}
+
+.card-especialidades .especialidades-btn{
+  width: 100%;
+  height: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.card-especialidades .especialidades-btn a{
+  width: 95%;
+  height: 95%;
+  background-color: var(--primary-color);
+  border-radius: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--background-color2);
+  transition: all 0.3s ease-in
+}
+
+.card-especialidades .especialidades-btn a:hover{
+  border: solid 3px var(--secondary-color);
+  background-color: var(--background-color);
+  color: var(--secondary-color);
+  cursor: pointer;
+  transform: translateY(-3px);
+}
+
+
+
+
+.especialidades .especialidades-fil {
   position: absolute;
   width: 100%;
   height: 100%;
   left: 0;
   bottom: 0;
 }
-.especialidades-fil img{
+
+.especialidades-fil img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  opacity: 0.6;
+  opacity: 0.3;
+  z-index: -5;
 }
