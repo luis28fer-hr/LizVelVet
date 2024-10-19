@@ -47,10 +47,14 @@
 }
 
 .no-select {
-  user-select: none; /* En la mayoría de los navegadores */
-  -webkit-user-select: none; /* Soporte para navegadores basados en WebKit (Chrome, Safari) */
-  -moz-user-select: none; /* Soporte para Firefox */
-  -ms-user-select: none; /* Soporte para Internet Explorer/Edge */
+  user-select: none;
+  /* En la mayoría de los navegadores */
+  -webkit-user-select: none;
+  /* Soporte para navegadores basados en WebKit (Chrome, Safari) */
+  -moz-user-select: none;
+  /* Soporte para Firefox */
+  -ms-user-select: none;
+  /* Soporte para Internet Explorer/Edge */
 }
 
 
@@ -60,7 +64,7 @@
   cursor: grab;
 }
 
-.slider-especialidades .card-especialidades{
+.slider-especialidades .card-especialidades {
   height: 29rem;
   display: flex;
   flex-direction: column;
@@ -69,15 +73,15 @@
   gap: 0.5rem;
 }
 
-.cards-pestañas{
+.cards-pestañas {
   width: 19.6rem;
 }
 
-.cards-unas{
+.cards-unas {
   width: 19.6rem;
 }
 
-.card-especialidades .especialidades-img{
+.card-especialidades .especialidades-img {
   width: 98%;
   height: 65%;
   display: flex;
@@ -86,20 +90,22 @@
   overflow: hidden;
   border-radius: 36px;
 }
-.especialidades-img img{
+
+.especialidades-img img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   overflow: hidden;
 
 }
-.especialidades-img img:hover{
+
+.especialidades-img img:hover {
   cursor: pointer;
   pointer-events: none;
 
 }
 
-.card-especialidades .especialidades-des{
+.card-especialidades .especialidades-des {
   width: 100%;
   height: 25%;
   display: flex;
@@ -108,7 +114,7 @@
   justify-content: start;
 }
 
-.especialidades-des h3{
+.especialidades-des h3 {
   width: 100%;
   text-align: center;
   font-family: "Mr Dafoe", cursive;
@@ -116,26 +122,28 @@
   font-weight: 500;
   color: var(--primary-color);
 }
-.especialidades-des p{
+
+.especialidades-des p {
   width: 85%;
   text-align: center;
   font-size: 0.85rem;
   line-height: 1rem;
 }
 
-.especialidades-des p span{
+.especialidades-des p span {
   font-weight: 600;
   display: block;
 }
 
-.card-especialidades .especialidades-btn{
+.card-especialidades .especialidades-btn {
   width: 100%;
   height: 10%;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.card-especialidades .especialidades-btn a{
+
+.card-especialidades .especialidades-btn a {
   width: 95%;
   height: 95%;
   background-color: var(--primary-color);
@@ -149,7 +157,7 @@
   transition: all 0.3s ease-in
 }
 
-.card-especialidades .especialidades-btn a:hover{
+.card-especialidades .especialidades-btn a:hover {
   border: solid 3px var(--secondary-color);
   background-color: var(--background-color);
   color: var(--secondary-color);
@@ -174,4 +182,53 @@
   object-fit: cover;
   opacity: 0.3;
   z-index: -5;
+}
+
+
+
+@media screen and (max-width: 480px) {
+
+
+  .especialidades {
+    height: 400vh;
+    padding: 2rem 0rem;
+    gap: 1.5rem;
+  }
+
+
+  .especialidades .title .liz {
+    margin-top: 2.7rem;
+    margin-left: -1rem;
+  }
+  .especialidades .title .studio{
+    margin-top: 3.6rem;
+  }
+
+  .especialidades .container-especialidades {
+    padding: 0.5rem 0 0.5rem 1.5rem;
+    margin-bottom: 4rem;
+  }
+
+
+  .slider-especialidades .card-especialidades {
+    height: 33rem;
+    gap: 0.5rem;
+  }
+
+  .cards-pestañas {
+    width: 20rem;
+  }
+
+  .cards-unas {
+    width: 20rem;
+  }
+
+  .especialidades-des p {
+    width: 88%;
+    text-align: center;
+    font-size: 1rem;
+    line-height: 1.05rem;
+  }
+
+
 }
