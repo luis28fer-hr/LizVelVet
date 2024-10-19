@@ -190,9 +190,11 @@
 
 
   .especialidades {
-    height: 400vh;
-    padding: 2rem 0rem;
+    height: 410vh;
+    padding: 0rem 0rem;
     gap: 1.5rem;
+    align-items: center;
+    justify-content: center;
   }
 
 
@@ -206,7 +208,9 @@
 
   .especialidades .container-especialidades {
     padding: 0.5rem 0 0.5rem 1.5rem;
-    margin-bottom: 4rem;
+    margin-bottom: 1rem;
+    overflow: auto;
+    background-color: yellowgreen;
   }
 
 
@@ -229,6 +233,4 @@
     font-size: 1rem;
     line-height: 1.05rem;
   }
-
-
 }
