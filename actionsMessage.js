@@ -5,7 +5,7 @@ const whatsappDiv = document.getElementById('whatsappLink');
 // Agregamos un event listener para redirigir cuando se haga clic en el div
 whatsappDiv.addEventListener('click', function () {
     // Número de teléfono de WhatsApp en formato internacional (sin +)
-    const phoneNumber = '+525654316131'; // Cambia este número por el tuyo
+    const phoneNumber = '+524482015506'; // Cambia este número por el tuyo
     // Mensaje que quieres que se envíe automáticamente
     const message = '¡Hola!🌟 Me gustaría saber más sobre los servicios que ofreces en LizVelvet 💅🏻. Estoy interesado(a) en cuidar mi imagen y me encantaría recibir más detalles. ¡Espero tu respuesta! 🤗';
 
