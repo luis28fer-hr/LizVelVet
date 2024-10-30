@@ -8,12 +8,12 @@ const spanPalabra = document.querySelector('.wordchange');
 // Función para cambiar la palabra
 function cambiarPalabra() {
 
-    // Esperar el tiempo de la animación para cambiar el texto
-    setTimeout(() => {
-        palabraActual = (palabraActual + 1) % palabras.length; // Cambia la palabra
-        spanPalabra.textContent = palabras[palabraActual];    // Actualiza el contenido
+  // Esperar el tiempo de la animación para cambiar el texto
+  setTimeout(() => {
+    palabraActual = (palabraActual + 1) % palabras.length; // Cambia la palabra
+    spanPalabra.textContent = palabras[palabraActual];    // Actualiza el contenido
 
-    }, 0); // Tiempo para sincronizar con el fade-out
+  }, 0); // Tiempo para sincronizar con el fade-out
 }
 
 // Cambiar palabra cada 3 segundos
@@ -66,7 +66,7 @@ function slideCarouselbreak() {
   currentIndex2++;
   // Reiniciar al principio cuando llegamos a la última tarjeta original
   if (currentIndex2 >= totalCardsWithClones) {
-    currentIndex2 = 0;  
+    currentIndex2 = 0;
     // Opcional: reiniciar la transición para un efecto más suave
     sliderbreak.style.transition = 'none';  // Desactiva la transición
     sliderbreak.style.transform = `translateX(0)`; // Regresa al inicio
@@ -89,19 +89,19 @@ const navLinks = document.querySelectorAll('.link');
 
 // Función para eliminar la clase activa de todos los enlaces
 function removeActiveClass() {
-    navLinks.forEach(link => {
-        link.classList.remove('link.active');
-    });
+  navLinks.forEach(link => {
+    link.classList.remove('link.active');
+  });
 }
 
 // Escucha el clic en cada enlace
 navLinks.forEach(link => {
-    link.addEventListener('link.active', function() {
-        // Primero, eliminamos la clase activa de todos
-        removeActiveClass();
-        // Luego, agregamos la clase activa al enlace clicado
-        link.classList.add('link.active');
-    });
+  link.addEventListener('link.active', function () {
+    // Primero, eliminamos la clase activa de todos
+    removeActiveClass();
+    // Luego, agregamos la clase activa al enlace clicado
+    link.classList.add('link.active');
+  });
 });
 
 
@@ -110,32 +110,50 @@ navLinks.forEach(link => {
 const sliders = document.querySelectorAll('.container-especialidades');
 
 sliders.forEach(slider => {
-    let isDown = false;
-    let startX;
-    let scrollLeft;
+  let isDown = false;
+  let startX;
+  let scrollLeft;
 
-    slider.addEventListener('mousedown', (e) => {
-        isDown = true;
-        slider.classList.add('active');
-        startX = e.pageX - slider.offsetLeft;
-        scrollLeft = slider.scrollLeft;
-    });
+  slider.addEventListener('mousedown', (e) => {
+    isDown = true;
+    slider.classList.add('active');
+    startX = e.pageX - slider.offsetLeft;
+    scrollLeft = slider.scrollLeft;
+  });
 
-    slider.addEventListener('mouseleave', () => {
-        isDown = false;
-        slider.classList.remove('active');
-    });
+  slider.addEventListener('mouseleave', () => {
+    isDown = false;
+    slider.classList.remove('active');
+  });
 
-    slider.addEventListener('mouseup', () => {
-        isDown = false;
-        slider.classList.remove('active');
-    });
+  slider.addEventListener('mouseup', () => {
+    isDown = false;
+    slider.classList.remove('active');
+  });
 
-    slider.addEventListener('mousemove', (e) => {
-        if (!isDown) return; // Solo hacer algo si el mouse está presionado
-        e.preventDefault();
-        const x = e.pageX - slider.offsetLeft;
-        const walk = (x - startX) * 3; // La cantidad de desplazamiento
-        slider.scrollLeft = scrollLeft - walk;
-    });
+  slider.addEventListener('mousemove', (e) => {
+    if (!isDown) return; // Solo hacer algo si el mouse está presionado
+    e.preventDefault();
+    const x = e.pageX - slider.offsetLeft;
+    const walk = (x - startX) * 3; // La cantidad de desplazamiento
+    slider.scrollLeft = scrollLeft - walk;
+  });
 });
+
+
+
+function toggleOpacity() {
+  const targetDiv = document.getElementById('targetMobile');
+
+  targetDiv.style.opacity = '1';
+  targetDiv.style.position = 'fixed';
+  targetDiv.style.zIndex = '100';
+}
+
+function toggleOpacityOff() {
+  const targetDiv = document.getElementById('targetMobile');
+
+  targetDiv.style.opacity = '0';
+  targetDiv.style.position = 'absolute';
+  targetDiv.style.zIndex = '0';
+}

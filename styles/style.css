@@ -37,8 +37,9 @@ body {
     width: 100%;
     height: 7vh;
     background-color: #FFF;
-    z-index: 100;
+    z-index: 150;
 }
+
 
 .navbar {
     display: flex;
@@ -47,6 +48,14 @@ body {
     height: 100%;
     list-style: none;
     gap: 0.2rem;
+}
+.mobile{
+    position: absolute;
+    opacity: 0;
+}
+.mobile-menu {
+    position: absolute;
+    opacity: 0;
 }
 
 .navbar li {
@@ -105,14 +114,15 @@ footer {
     gap: 0.7rem;
 }
 
-footer .fooimg{
+footer .fooimg {
     width: 100%;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: start;
 }
-footer .fooimg img{
+
+footer .fooimg img {
     display: inline;
     width: 15%;
     height: 8rem;
@@ -130,7 +140,7 @@ footer p span {
     font-weight: 600
 }
 
-footer div{
+footer div {
     display: flex;
     flex-direction: column;
     align-items: start;
@@ -138,7 +148,7 @@ footer div{
     gap: 0.3rem;
 }
 
-footer div a{
+footer div a {
     font-size: .85rem;
     color: var(--text-color);
     display: flex;
@@ -148,11 +158,11 @@ footer div a{
     transition: all 0.3s ease-in;
 }
 
-footer div a i{
+footer div a i {
     font-size: 1rem;
 }
 
-footer div a:hover{
+footer div a:hover {
     color: var(--primary-color);
     transform: scale(1.05) translateX(-10px);
     font-weight: 600;
@@ -160,6 +170,7 @@ footer div a:hover{
 
 
 @media screen and (max-width: 480px) {
+
 
 
     .navegation {
@@ -203,6 +214,94 @@ footer div a:hover{
     }
 
 
+    .mobile-menu {
+        position: fixed;
+        right: 1rem;
+        bottom: 2.2rem;
+        opacity: 1;
+        z-index: 50;
+        transition: all 0.3s ease-in;
+
+    }
+
+    .mobile-menu i {
+        width: 3.2rem;
+        height: 3.3rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        font-size: 1.3rem;
+        background-color: var(--primary-color);
+        color: var(--background-color);
+        box-shadow: 0px 2px 5px 2px rgba(122, 19, 83, 0.3);
+    }
+    .mobile-menu:hover {
+        cursor: pointer;
+        transform: scale(1.1);
+    }
+
+
+    .mobile {
+        position: absolute;
+        opacity: 0;
+        width: 100%;
+        height: 100vh;
+        background-color: #FFF;
+        z-index: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: opacity 1s ease-in;
+    }
+
+    .mobile .navbar-mobile {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        list-style: none;
+        gap: 0.5rem;
+        text-decoration: none;
+        transition: all 0.3s ease-in;
+    }
+
+    .mobile .navbar-mobile li {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 600;
+        width: 100%;
+        height: 8%;
+        transition: all 0.3s ease;
+    }
+
+    .navbar-mobile li a {
+        color: var(--secondary-color);
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        font-weight: 600;
+        font-size: 1.3rem;
+        transition: all 0.3s ease;
+
+    }
+
+    .navbar-mobile li:hover {
+        background-color: var(--primary-color);
+    }
+
+    .navbar-mobile li:hover a {
+        color: var(--background-color2);
+    }
+
+
     footer {
         width: 100%;
         height: 110vh;
@@ -213,33 +312,35 @@ footer div a:hover{
         justify-content: end;
         gap: 0.5rem;
     }
-    footer .fooimg{
+
+    footer .fooimg {
         width: 100%;
         display: flex;
         flex-direction: row;
         align-items: center;
         justify-content: start;
     }
-    footer .fooimg img{
+
+    footer .fooimg img {
         display: inline;
         width: 25%;
         height: 7rem;
         object-fit: cover;
-    
+
     }
-    
+
     footer p {
         width: 95%;
         font-size: .85rem;
         font-weight: 400;
     }
-    
-    footer div{
+
+    footer div {
 
         gap: 0.15rem;
     }
-    
-    footer div a{
+
+    footer div a {
         font-size: .8rem;
         color: var(--text-color);
         display: flex;
@@ -248,17 +349,17 @@ footer div a:hover{
         gap: 0.4rem;
         transition: all 0.3s ease-in;
     }
-    
-    footer div a i{
+
+    footer div a i {
         font-size: 1rem;
     }
-    
-    footer div a:hover{
+
+    footer div a:hover {
         color: var(--primary-color);
         transform: scale(1.05) translateX(-10px);
         font-weight: 600;
     }
-    
+
 
 
 }

@@ -37,9 +37,23 @@
                 <li class="link"><a href="#Contacto">Contacto</a></li>
             </ul>
         </nav>
+
+        <nav id="targetMobile" class="mobile">
+            <ul class="navbar-mobile">
+                <li class="link-movil"><a onclick="toggleOpacityOff()" href="#Lizvelvet">Inicio</a></li>
+                <li class="link-movil"><a onclick="toggleOpacityOff()" href="#Servicios">Servicios</a></li>
+                <li class="link-movil"><a onclick="toggleOpacityOff()" href="#Especialidades">Especialidades</a></li>
+                <li class="link-movil"><a onclick="toggleOpacityOff()" href="#Academia">Academia</a></li>
+                <li class="link-movil"><a onclick="toggleOpacityOff()" href="#Contacto">Contacto</a></li>
+            </ul>
+        </nav>
     </header>
     <main>
         <section id="Lizvelvet" class="home">
+            <div id="triggerMenuMobile" class="mobile-menu" onclick="toggleOpacity()">
+                <i class="fa-solid fa-ellipsis-vertical"></i>
+            </div>
+
             <div class="presentation">
                 <div class="text arriba">
                     <h2>
@@ -499,7 +513,7 @@
                             </p>
                         </div>
                         <div class="especialidades-btn"><a href="">ME INTERESA</a></div>
-                    </div> 
+                    </div>
                     <div class="card-especialidades cards-unas">
                         <div class="especialidades-img">
                             <img src="/img/especialidades/Color. Cortinas.JPG" alt="Cortinas">
@@ -833,7 +847,7 @@
                                 insumos, y herramientas teóricas y prácticas
                             </li>
                         </ul>
-                        <a target="_blank" href="/img/curso/Temario curso inicial.pdf.pdf" class="temario">Consulta el
+                        <a target="_blank" href="/img/curso/curso_inicial.pdf" class="temario">Consulta el
                             temario</a>
                     </div>
                     <div class="curso-footer">
@@ -889,7 +903,7 @@
                                 insumos, y herramientas teóricas y prácticas
                             </li>
                         </ul>
-                        <a target="_blank" href="/img/curso/Temario curso avanzado.pdf" class="temario">Consulta el
+                        <a target="_blank" href="/img/curso/curso_avanzado.pdf" class="temario">Consulta el
                             temario</a>
                     </div>
                     <div class="curso-footer">
@@ -926,7 +940,9 @@
                                     class="fa-brands fa-facebook"></i>Fany Moreno</a>
                             <a target="_blank" href="https://wa.me/+524481153042"><i
                                     class="fa-brands fa-whatsapp"></i>448 115 3042</a>
-                            <a href=""><i class="fa-brands fa-instagram"></i></a>
+                            <a target="_blank"
+                                href="https://www.instagram.com/fany.moreno.102361?igsh=N3BmYnBwc2pnbGVz"><i
+                                    class="fa-brands fa-instagram"></i>Fany Moreno</a>
                             <a><i class="fa-solid fa-location-dot"></i>El Saúz Alto, Pedro Escobedo</a>
                         </div>
                     </div>
@@ -938,11 +954,14 @@
                     <div class="info-card">
                         <p class="title">LVA002 | Áurea Gabriela Martínez</p>
                         <div class="icons">
-                            <a target="_blank" href="https://www.facebook.com/share/dawt2YxJqWAn6Gzx/?mibextid=LQQJ4d"><i
+                            <a target="_blank"
+                                href="https://www.facebook.com/share/dawt2YxJqWAn6Gzx/?mibextid=LQQJ4d"><i
                                     class="fa-brands fa-facebook"></i>AGabi Martínez Silva</a>
                             <a target="_blank" href="https://wa.me/+524428311019"><i
                                     class="fa-brands fa-whatsapp"></i>442 831 1019</a>
-                            <a target="_blank" href="https://www.instagram.com/agabimartinezsilva?igsh=aHlwMmc4dmphemJm"><i class="fa-brands fa-instagram"></i>agabimartinezsilva</a>
+                            <a target="_blank"
+                                href="https://www.instagram.com/agabimartinezsilva?igsh=aHlwMmc4dmphemJm"><i
+                                    class="fa-brands fa-instagram"></i>agabimartinezsilva</a>
                             <a><i class="fa-solid fa-location-dot"></i>Guadalupe Septien, Pedro
                                 Escobedo.</a>
                         </div>
@@ -955,11 +974,14 @@
                     <div class="info-card">
                         <p class="title">LVA003 | Araceli Sánchez Monera</p>
                         <div class="icons">
-                            <a target="_blank" href="https://www.facebook.com/share/VHSFscAqEw77esUq/?mibextid=LQQJ4d"><i
+                            <a target="_blank"
+                                href="https://www.facebook.com/share/VHSFscAqEw77esUq/?mibextid=LQQJ4d"><i
                                     class="fa-brands fa-facebook"></i>Araceli Sánchez </a>
                             <a target="_blank" href="https://wa.me/+524423898065"><i
                                     class="fa-brands fa-whatsapp"></i>442 389 8065</a>
-                            <a target="_blank" href="https://www.instagram.com/aracelisanchez8672?igsh=NGpjeXp3YmFsdGVs"><i class="fa-brands fa-instagram"></i>aracelisanchez8672</a>
+                            <a target="_blank"
+                                href="https://www.instagram.com/aracelisanchez8672?igsh=NGpjeXp3YmFsdGVs"><i
+                                    class="fa-brands fa-instagram"></i>aracelisanchez8672</a>
                             <a><i class="fa-solid fa-location-dot"></i>Pedro Escobedo</a>
                         </div>
                     </div>
@@ -971,11 +993,13 @@
                     <div class="info-card">
                         <p class="title">LVA004 | María Fernanda Arista</p>
                         <div class="icons">
-                            <a target="_blank" href="https://www.facebook.com/share/CqFtse3cY4sYe9Vv/?mibextid=LQQJ4d"><i
+                            <a target="_blank"
+                                href="https://www.facebook.com/share/CqFtse3cY4sYe9Vv/?mibextid=LQQJ4d"><i
                                     class="fa-brands fa-facebook"></i>Fernanda Arista</a>
                             <a target="_blank" href="https://wa.me/+524481073278"><i
                                     class="fa-brands fa-whatsapp"></i>448 107 3278</a>
-                            <a target="_blank" href="https://www.instagram.com/fastudio24?igsh=OWduamVuMmVwOG50"><i class="fa-brands fa-instagram"></i>feraristah</a>
+                            <a target="_blank" href="https://www.instagram.com/fastudio24?igsh=OWduamVuMmVwOG50"><i
+                                    class="fa-brands fa-instagram"></i>feraristah</a>
                             <a href=""><i class="fa-solid fa-location-dot"></i>Pedro Escobedo</a>
                         </div>
                     </div>
@@ -1063,7 +1087,7 @@
         </p>
         <div>
             <a target="_blank" href="https://wa.me/+524481164569" title="Ir a perfil WhatsApp"><i
-                class="fa-brands fa-whatsapp"> </i> 448 116 4569</a>
+                    class="fa-brands fa-whatsapp"> </i> 448 116 4569</a>
         </div>
     </footer>
 
