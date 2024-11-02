@@ -26,7 +26,7 @@ function enviarMensaje(servicio) {
     // Número de teléfono de WhatsApp en formato internacional (sin +)
     const phoneNumber = '+524482015506'; // Cambia este número por el tuyo
     // Mensaje que quieres que se envíe automáticamente
-    const message = `¡Hola! 😊✨ Me encantaría agendar una cita para el servicio de *${servicio}* 💅💆‍♀️.\n\nEstoy muy interesada y quisiera saber todos los detalles: costo 💸, qué incluye 📋 y la disponibilidad de turnos 🕒. \n\n¡Gracias por tu ayuda! 🌟`;
+    const message = `¡Hola! 😊✨\n\nMe encantaría agendar una cita para el servicio de *${servicio}* 💅💆‍♀️.\n\nEstoy muy interesada y quisiera saber todos los detalles:\n- Costo 💸\n- Qué incluye 📋\n- Disponibilidad de turnos 🕒. \n\n¡Gracias por tu ayuda! 🌟`;
 
     // Codificamos el mensaje para que sea parte de la URL
     const encodedMessage = encodeURIComponent(message);
