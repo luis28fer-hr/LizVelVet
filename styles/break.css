@@ -43,6 +43,32 @@
 }
 
 
+@media screen and (max-width: 768px) {
+    
+    .break-container{
+        width: 100%;
+        height: 40vh;
+    }
+    .break-container .break-filtro{
+        width: 100%;
+        height: 100%;
+    }
+    
+    .break{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: start;
+        justify-content: start;
+    }
+    .break .container-img{
+        min-width: calc(100% / 2);         /* Cada tarjeta ocupa un tercio del contenedor */
+    }
+    .container-img img{
+        width: 100%;
+        height: 100%;
+    }
+}
 
 @media screen and (max-width: 480px) {
     

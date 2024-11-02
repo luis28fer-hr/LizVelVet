@@ -150,6 +150,128 @@
 }
 
 
+@media screen and (max-width: 768px) {
+
+    .nosotros{
+        width: 100%;
+        height: 115vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+    }
+    
+    .nosotros .title{
+        width: 100%;
+        height: 10%;
+        display: flex;
+        align-items: start;
+        justify-content: center;
+    }
+    .title .question{
+        font-size: 2.55rem;
+    }
+    .title .question2{
+        margin-top: 1rem;
+        font-size: 2.55rem;
+    }
+     .title .whatis {
+        margin-top: 0rem;
+        color: #000;
+        font-size: 1.55rem;
+        letter-spacing: -1px;
+     }
+     .title .liz {
+        margin-top: 0.5rem;
+        margin-left: -0.3rem;
+        font-size: 2.65rem;
+     }
+    .title .liz:hover{
+        font-size: 2.70rem;
+    }
+    
+     .title .studio{
+        margin-top: 2.15rem;
+        margin-left: 0.7rem;
+        color: #000;
+        font-size: 0.85rem;
+     }
+    
+     .nosotros .weinfo{
+        width: 100%;
+        height: 75%;
+        display: flex;
+        flex-direction: column-reverse;
+        margin-top: 0rem;
+
+     }
+    
+     .weinfo .infofoto{
+        width: 100%;
+        height: 50%;
+     }
+    
+     .infofoto .fil{
+        position: relative;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+     }
+    
+     .weinfo .infofoto .fil img{
+        width: 70%;
+        height: 55%;
+     }
+     
+     .fil .fil_1{
+        position: absolute;
+        width: 70%;
+        height: 55%;
+        margin: -2.8rem 0 0 -2.8rem;
+        opacity: 0.7;
+     } 
+     .fil .fil_2{
+        position: absolute;
+        width: 70%;
+        height: 55%;
+        margin: 2.8rem -2.8rem 0 0;
+        opacity: 0.5;
+     }
+    
+    .nosotros .weinfo .infodes{
+        width: 100%;
+        height: 50%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 0.7rem;
+    }
+    .infodes p{
+        width: 89%;
+        text-align: center;
+        font-size: 1.05rem;
+        line-height: 1.25rem;
+    }
+    .infodes .redes{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0.2rem 0;
+        gap: 0.5rem;
+    }
+    .redes i{
+        font-size: 1.5rem;
+    }
+    .redes i:hover{
+        transform: scale(1.05);
+    }
+    
+
+}
 @media screen and (max-width: 480px) {
 
     .nosotros{

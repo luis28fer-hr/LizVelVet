@@ -27,7 +27,32 @@
     height: 65%;
 }
 
-
+@media screen and (max-width: 768px) {
+    .visitanos{
+        width: 100%;
+        height: 120vh;
+        gap: 1rem;
+        display: flex;
+        align-items: center;  
+        justify-content: end;  
+    }
+    
+    .visitanos p{
+        display: flex;
+        align-items: start;
+        justify-content: center;
+        width: 90%;
+        height: 20%;
+        text-align: center;
+        font-size: 1.18rem;
+    }
+    .visitanos iframe{
+        width: 100%;
+        height: 66%;
+    }
+    
+    
+}
 
 
 @media screen and (max-width: 480px) {

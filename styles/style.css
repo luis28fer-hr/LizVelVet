@@ -168,6 +168,201 @@ footer div a:hover {
     font-weight: 600;
 }
 
+@media screen and (max-width: 768px) {
+
+
+    .navegation {
+        width: 100%;
+        height: 7vh;
+    }
+
+    .navbar {
+        height: 100%;
+        gap: 0rem;
+    }
+
+    .navbar li {
+        width: 20%;
+    }
+
+    .navbar li a {
+        width: 100%;
+        height: 100%;
+        font-size: 0.3rem;
+        transition: all 0.3s ease-in;
+        overflow: hidden;
+    }
+
+    .navbar li a:hover {
+        font-size: 0.5rem;
+        color: var(--primary-color);
+
+    }
+
+    .link {
+        opacity: 0;
+        font-size: 0rem;
+        color: var(--primary-color);
+    }
+
+    .navbar li a img {
+        width: 100%;
+        height: 85%;
+        object-fit: cover;
+    }
+
+
+    .mobile-menu {
+        position: fixed;
+        right: 1rem;
+        bottom: 2.2rem;
+        opacity: 1;
+        z-index: 50;
+        transition: all 0.3s ease-in;
+        border-radius: 50%;
+
+    }
+
+    .mobile-menu i {
+        width: 3.2rem;
+        height: 3.3rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        font-size: 1.3rem;
+        background-color: var(--primary-color);
+        color: var(--background-color);
+        box-shadow: 0px 2px 5px 2px rgba(122, 19, 83, 0.3);
+    }
+    .mobile-menu:hover {
+        cursor: pointer;
+        transform: scale(1.1);
+    }
+
+
+    .mobile {
+        position: absolute;
+        opacity: 0;
+        width: 100%;
+        height: 100vh;
+        background-color: #FFF;
+        z-index: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: opacity 1s ease-in;
+    }
+
+    .mobile .navbar-mobile {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        list-style: none;
+        gap: 0.5rem;
+        text-decoration: none;
+        transition: all 0.3s ease-in;
+    }
+
+    .mobile .navbar-mobile li {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 600;
+        width: 100%;
+        height: 8%;
+        transition: all 0.3s ease;
+    }
+
+    .navbar-mobile li a {
+        color: var(--secondary-color);
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        font-weight: 600;
+        font-size: 1.3rem;
+        transition: all 0.3s ease;
+
+    }
+
+    .navbar-mobile li:hover {
+        background-color: var(--primary-color);
+    }
+
+    .navbar-mobile li:hover a {
+        color: var(--background-color2);
+    }
+
+
+    footer {
+        width: 100%;
+        height: 110vh;
+        padding: .5rem 1.5rem 3rem 1.5rem;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: end;
+        gap: 0.5rem;
+    }
+
+    footer .fooimg {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: start;
+    }
+
+    footer .fooimg img {
+        display: inline;
+        width: 25%;
+        height: 7rem;
+        object-fit: cover;
+
+    }
+
+    footer p {
+        width: 95%;
+        font-size: .9rem;
+        font-weight: 400;
+    }
+
+    footer div {
+
+        gap: 0.15rem;
+    }
+
+    footer div a {
+        font-size: .9rem;
+        color: var(--text-color);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.4rem;
+        transition: all 0.3s ease-in;
+    }
+
+    footer div a i {
+        font-size: 1.1rem;
+    }
+
+    footer div a:hover {
+        color: var(--primary-color);
+        transform: scale(1.05) translateX(-10px);
+        font-weight: 600;
+    }
+
+
+
+}
+
 
 @media screen and (max-width: 480px) {
 
