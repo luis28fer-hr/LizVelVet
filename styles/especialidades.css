@@ -10,7 +10,7 @@
 .especialidades {
   position: relative;
   width: 100%;
-  height: 500vh;
+  height: auto;
   background-color: var(--background-color2);
   overflow: hidden;
   display: flex;
