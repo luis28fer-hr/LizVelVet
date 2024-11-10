@@ -5,50 +5,1194 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <title>Liz Velvet</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
-    <link rel="stylesheet" href="/styles/commingsoon.css">
+
+    <!-- Imports CSS-->
+    <link rel="stylesheet" href="/styles/style.css" />
+    <link rel="stylesheet" href="/styles/inicio.css" />
+    <link rel="stylesheet" href="/styles/nosotros.css" />
+    <link rel="stylesheet" href="/styles/services.css" />
+    <link rel="stylesheet" href="/styles/especialidades.css" />
+    <link rel="stylesheet" href="/styles/break.css" />
+    <link rel="stylesheet" href="/styles/miademica.css" />
+    <link rel="stylesheet" href="/styles/referencias.css" />
+    <link rel="stylesheet" href="/styles/Visitanos.css" />
+    <link rel="stylesheet" href="/styles/cursos.css" />
     <link rel="icon" href="/img/ceja.png" type="image/png">
 
-    <script defer src="countdown.js"></script>
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+    <script defer src="animaciones.js"></script>
 </head>
 
 <body>
+    <header>
+        <nav class="navegation">
+            <ul class="navbar">
+                <li class="link"><a href="#Servicios">Servicios</a></li>
+                <li class="link"><a href="#Especialidades">Especialidades</a></li>
+                <li class="">
+                    <a href="#Lizvelvet"><img src="/img/general/logo.png" alt="Logotipo LizVelvet" /></a>
+                </li>
+                <li class="link"><a href="#Academia">Academia</a></li>
+                <li class="link"><a href="#Contacto">Contacto</a></li>
+            </ul>
+        </nav>
+
+        <nav id="targetMobile" class="mobile">
+            <ul class="navbar-mobile">
+                <li class="link-movil"><a onclick="toggleOpacityOff()" href="#Lizvelvet">Inicio</a></li>
+                <li class="link-movil"><a onclick="toggleOpacityOff()" href="#Servicios">Servicios</a></li>
+                <li class="link-movil"><a onclick="toggleOpacityOff()" href="#Especialidades">Especialidades</a></li>
+                <li class="link-movil"><a onclick="toggleOpacityOff()" href="#Academia">Academia</a></li>
+                <li class="link-movil"><a onclick="toggleOpacityOff()" href="#Contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
     <main>
-        <div class="text">
-            <h1>Próximamente...</h1>
-            <h2>Estamos ultimando detalles para ofrecerte una gran experiencia.</h2>
-            <h3>El sitio estará disponible en:</h3>
+        <section id="Lizvelvet" class="home">
+            <div id="triggerMenuMobile" class="mobile-menu" onclick="toggleOpacity()">
+                <i class="fa-solid fa-ellipsis-vertical"></i>
+            </div>
+
+            <div class="presentation">
+                <div class="text arriba">
+                    <h2>
+                        Bienvenida a un mundo donde la
+                        <div class="wordchange">elegancia</div>
+                        brilla en cada detalle.
+                    </h2>
+                </div>
+                <div class="logo medio">
+                    <h1><span>Liz Velvet</span> ESTUDIO.</h 1>
+                </div>
+                <div class="info abajo">
+                    <div class="arriba">
+                        <p>05+</p>
+                        Cursos
+                    </div>
+                    <div class="medio">
+                        <p>15+</p>
+                        Servicios
+                    </div>
+                    <div class="abajo">
+                        <p>13+</p>
+                        Especialidades
+                    </div>
+                </div>
+
+                <img class="svghome no-select" src="/svg/curvehome.svg" />
+            </div>
+            <div class="collageimg">
+                <div class="carr">
+                    <div>
+                        <img src="/img/Inicio/img3.jpg" alt="img collage" />
+                    </div>
+                    <div>
+                        <img src="/img/Inicio/Uñas Xpress Gel.JPG" alt="img collage" />
+                    </div>
+                    <div>
+                        <img src="/img/Inicio/Color. Babylights.JPG" alt="img collage" />
+                    </div>
+                    <div>
+                        <img src="/img/Inicio/img2.jpg" alt="img collage" />
+                    </div>
+                    <div>
+                        <img src="/img/Inicio/Pedicura.JPG" alt="img collage" />
+                    </div>
+                    <div>
+                        <img src="/img/Inicio/Pestañas Set Clean G.PNG" alt="img collage" />
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="nosotros">
+            <div class="title">
+                <span class="question">¿</span>
+                <span class="whatis">Qué es</span>
+                <span class="liz">Liz Velvet</span>
+                <span class="studio">ESTUDIO.</span>
+                <span class="question2">?</span>
+            </div>
+            <div class="weinfo">
+                <div class="infofoto">
+                    <div class="fil">
+                        <img src="/img/Inicio/IMG_6031.jpg" alt="Liz Velvet instalaciones" />
+                        <div class="fil_1"></div>
+                        <div class="fil_2"></div>
+                    </div>
+                </div>
+                <div class="infodes">
+                    <p>
+                        Liz Velvet es más que un salón de belleza; es un espacio dedicado
+                        a realzar la belleza natural de cada persona con servicios
+                        personalizados y productos de la más alta calidad. Nos
+                        especializamos en una amplia gama de tratamientos, desde
+                        extensiones de pestañas y uñas hasta, técnicas avanzadas de
+                        colorimetría y maquillaje profesional. En Liz Velvet, creemos que
+                        la belleza se encuentra en los detalles, por lo que cada servicio
+                        está diseñado para resaltar tu estilo único y potenciar tu
+                        confianza.
+                    </p>
+                    <div class="redes">
+                        <a target="_blank"
+                            href="https://www.facebook.com/profile.php?id=100088080974062&mibextid=LQQJ4d"
+                            title="Ir a perfil de Facebook"><i class="fa-brands fa-facebook"></i></a>
+                        <a target="_blank" href="https://wa.me/+524482015506" title="Ir a perfil WhatsApp"><i
+                                class="fa-brands fa-whatsapp"></i></a>
+                        <a target="_blank"
+                            href="https://www.instagram.com/liz_velvet?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+                            title="Ir a perfil de Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="Servicios" class="services">
+            <div class="container-info">
+                <div class="title">
+                    <span class="whatis">Servicios</span>
+                    <span class="liz">Liz Velvet</span>
+                    <span class="studio">ESTUDIO.</span>
+                </div>
+                <div class="info">
+                    En <span>Liz Velvet</span>, ofrecemos una amplia gama de servicios
+                    diseñados para engrandecer tu belleza y destacar tu estilo único.
+                    Desde el cuidado de uñas y pestañas hasta cortes de cabello
+                    personalizados, maquillajes profesionales y técnicas avanzadas de
+                    color, nuestro equipo está comprometido a brindarte la mejor
+                    experiencia en cada tratamiento.
+                </div>
+                <div class="button">
+                    <div id="whatsappLink"><a>AGENDAR CITA</a></div>
+                </div>
+            </div>
+            <div class="container-carrusel">
+                <div class="carousel-slider">
+                    <div class="card">
+                        <div class="card-img">
+                            <img src="/img/servicios/Pestañas Set Classic .JPG" alt="Servicio de Pestañas" />
+                        </div>
+                        <div class="card-des">
+                            <h2>Pestañas</h2>
+                            <p>
+                                Servicios de extensiones, técnica clásica y volumen, más de 8
+                                efectos.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-img">
+                            <img src="/img/servicios/Uñas Xpress Gel.JPG" alt="Servicios de Uñas" />
+                        </div>
+                        <div class="card-des">
+                            <h2>Uñas</h2>
+                            <p>
+                                Manicuras, pedicuras, extensiones de gel expres y acrilico.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-img">
+                            <img src="/img//servicios/Maquillaje XV años.JPG" alt="Servicio de Maquillaje" />
+                        </div>
+                        <div class="card-des">
+                            <h2>Maquillaje</h2>
+                            <p>
+                                Maquillaje social, nupcial, XV años, noche, glamp y pruebas
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-img">
+                            <img src="/img/servicios/img23.jpg" alt="Servicio de Peinado" />
+                        </div>
+                        <div class="card-des">
+                            <h2>Peinado</h2>
+                            <p>Peinados para bodas, eventos especiales o día a día.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-img">
+                            <img src="/img/servicios/Color. Balayage.JPG" alt="Servicio de Colorimetria" />
+                        </div>
+                        <div class="card-des">
+                            <h2>Colorimetria</h2>
+                            <p>
+                                Servicios de tintes, balayage, babylights y corrección de
+                                color, etc.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-img">
+                            <img src="/img/servicios/img25.jpg" alt="Servicio de Cortes" />
+                        </div>
+                        <div class="card-des">
+                            <h2>Cortes</h2>
+                            <p>Servicios de cortes para hombres y mujeres.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-img">
+                            <img src="/img/servicios/Keratina Taninoplastia.JPG" alt="Servicio de Taninoplastia" />
+                        </div>
+                        <div class="card-des">
+                            <h2>Keratinas</h2>
+                            <p>
+                                Tratamientos capilares, japonesa, brasieña, efecto espejo y
+                                taninoplastia.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-img">
+                            <img src="/img/servicios/epilacion.jpeg" alt="Servicio de Epilación" />
+                        </div>
+                        <div class="card-des">
+                            <h2>Epelicación</h2>
+                            <p>
+                                Cera caliente, piernas, brazos, cejas, bozo, axilas, abdomen.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-img">
+                            <img src="/img/servicios/Maquillaje prueba.JPG" alt="Otros servicios" />
+                        </div>
+                        <div class="card-des">
+                            <h2>Otros Servicios</h2>
+                            <p>Pregunta por tu servicio sin compromiso.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-img">
+                            <img src="/img/servicios/Pestañas Set Classic .JPG" alt="Servicio de Pestañas" />
+                        </div>
+                        <div class="card-des">
+                            <h2>Pestañas</h2>
+                            <p>
+                                Servicios de extensiones, tecnica clasica y volumen, mas de 8
+                                efectos.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-img">
+                            <img src="/img/servicios/Uñas Xpress Gel.JPG" alt="Servicios de Uñas" />
+                        </div>
+                        <div class="card-des">
+                            <h2>Uñas</h2>
+                            <p>
+                                Manicuras, pedicuras, extensiones de gel expres y acrilico.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-img">
+                            <img src="/img//servicios/Maquillaje XV años.JPG" alt="Servicio de Maquillaje" />
+                        </div>
+                        <div class="card-des">
+                            <h2>Maquillaje</h2>
+                            <p>
+                                Maquillaje social, nupcial, XV años, noche, glamp y pruebas
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-img">
+                            <img src="/img/servicios/img23.jpg" alt="Servicio de Peinado" />
+                        </div>
+                        <div class="card-des">
+                            <h2>Peinado</h2>
+                            <p>Peinados para bodas, eventos especiales o día a día.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-img">
+                            <img src="/img/servicios/Color. Balayage.JPG" alt="Servicio de Colorimetria" />
+                        </div>
+                        <div class="card-des">
+                            <h2>Colorimetria</h2>
+                            <p>
+                                Servicios de tintes, balayage, babylights y corrección de
+                                color, etc.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-img">
+                            <img src="/img/servicios/img25.jpg" alt="Servicio de Cortes" />
+                        </div>
+                        <div class="card-des">
+                            <h2>Cortes</h2>
+                            <p>Servicios de cortes para hombres y mujeres.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-img">
+                            <img src="/img/servicios/Keratina Taninoplastia.JPG" alt="Servicio de Taninoplastia" />
+                        </div>
+                        <div class="card-des">
+                            <h2>Keratinas</h2>
+                            <p>
+                                Tratamientos capilares, japonesa, brasieña, efecto espejo y
+                                taninoplastia.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-img">
+                            <img src="/img/servicios/epilacion.jpeg" alt="Servicio de Epilación" />
+                        </div>
+                        <div class="card-des">
+                            <h2>Epelicación</h2>
+                            <p>
+                                Cera caliente, piernas, brazos, cejas, bozo, axilas, abdomen.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="backsvg">
+                    <img src="/svg/svgservices.svg" alt="None" />
+                </div>
+            </div>
+        </section>
+        <section id="Especialidades" class="especialidades">
+            <div class="title">
+                <span class="whatis">Especialidades</span>
+                <span class="liz">Liz Velvet</span>
+                <span class="studio">ESTUDIO.</span>
+            </div>
+            <div class="container-especialidades no-select ">
+                <div class="slider-especialidades">
+                    <div class="card-especialidades cards-pestañas">
+                        <div class="especialidades-img">
+                            <img src="/img/especialidades/Pestañas Set Classic .JPG" alt="Set Classic">
+                        </div>
+                        <div class="especialidades-des">
+                            <h3>Set Classic</h3>
+                            <p><span>Natural y elegante.</span>Conserva la sencillez, aportando mayor longitud y un
+                                hermoso rizado.
+                            </p>
+                        </div>
+                        <div class="especialidades-btn"><a onclick="enviarMensaje('Pestañas Set Classic')">ME INTERESA</a></div>
+                    </div>
+                    <div class="card-especialidades cards-pestañas ">
+                        <div class="especialidades-img">
+                            <img src="/img/especialidades/Pestañas Set Clean G.PNG" alt="Set Clean G">
+                        </div>
+                        <div class="especialidades-des">
+                            <h3>Set Clean Girl</h3>
+                            <p><span>Volumen super ligero, nada exagerado.</span>Luce tus ojos con pestañas más
+                                abundantes.
+                            </p>
+                        </div>
+                        <div class="especialidades-btn"><a onclick="enviarMensaje('Pestañas Set Clean Girl')">ME INTERESA</a></div>
+                    </div>
+                    <div class="card-especialidades cards-pestañas">
+                        <div class="especialidades-img">
+                            <img src="/img/especialidades/Pestañas Set Diva.JPG" alt="Set Diva">
+                        </div>
+                        <div class="especialidades-des">
+                            <h3>Set Diva</h3>
+                            <p><span>Volumen mayor densidad.</span>Pestañas mas negras y mate. Mirada más profunda y
+                                dramática.
+                            </p>
+                        </div>
+                        <div class="especialidades-btn"><a onclick="enviarMensaje('Pestañas Set Diva')">ME INTERESA</a></div>
+                    </div>
+                    <div class="card-especialidades cards-pestañas">
+                        <div class="especialidades-img">
+                            <img src="/img/especialidades/setBrown.jpg" alt="Set Brown">
+                        </div>
+                        <div class="especialidades-des">
+                            <h3>Set Brown</h3>
+                            <p><span>Fibras en tonos café.</span>Perfectas para personas con una colorimetría clara.</p>
+                        </p>
+                        </div>
+                        <div class="especialidades-btn"><a onclick="enviarMensaje('Pestañas Set Brown')">ME INTERESA</a></div>
+                    </div>
+                    <div class="card-especialidades cards-pestañas">
+                        <div class="especialidades-img">
+                            <img src="/img/especialidades/Hollywood .JPG" alt="Set Hollywood">
+                        </div>
+                        <div class="especialidades-des">
+                            <h3>Set Hollywood</h3>
+                            <p> <span>Volumen + espigas.</span>Ideal para personas más atrevidas
+                                hermoso rizado.
+                            </p>
+                        </div>
+                        <div class="especialidades-btn"><a onclick="enviarMensaje('Pestañas Set Hollywood')">ME INTERESA</a></div>
+                    </div>
+                    <div class="card-especialidades cards-pestañas">
+                        <div class="especialidades-img">
+                            <img src="/img/especialidades/Pestañas Set Ele.JPG" alt="Set Ele">
+                        </div>
+                        <div class="especialidades-des">
+                            <h3>Set Ele</h3>
+                            <p> <span>Fox eyes.</span>Curvaturas en L y M creando un efecto lifting en tu mirada.
+                            </p>
+                        </div>
+                        <div class="especialidades-btn"><a onclick="enviarMensaje('Pestañas Set Ele')">ME INTERESA</a></div>
+                    </div>
+                    <div class="card-especialidades cards-pestañas">
+                        <div class="especialidades-img">
+                            <img src="/img/especialidades/Mega.JPG" alt="Set Mega">
+                        </div>
+                        <div class="especialidades-des">
+                            <h3>Set Mega</h3>
+                            <p><span>Buchi lashes.</span>Pestañas completamente abundantes y super extravagantes.
+                            </p>
+                        </div>
+                        <div class="especialidades-btn"><a onclick="enviarMensaje('Pestañas Set Mega')">ME INTERESA</a></div>
+                    </div>
+                    <div class="card-especialidades cards-pestañas">
+                        <div class="especialidades-img">
+                            <img src="/img/especialidades/Ceja 6K.JPG" alt="Cejas 6K">
+                        </div>
+                        <div class="especialidades-des">
+                            <h3>Cejas 6K</h3>
+                            <p><span>Servicios en tus cejas.</span>Visagismo personalizado, Laminación, Epilación con
+                                cera caliente.
+                            </p>
+                        </div>
+                        <div class="especialidades-btn"><a onclick="enviarMensaje('Cejas 6K')">ME INTERESA</a></div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="container-especialidades no-select">
+                <div class="slider-especialidades">
+                    <div class="card-especialidades cards-unas">
+                        <div class="especialidades-img">
+                            <img src="/img/especialidades/Uñas Acrílicas.JPG" alt="Acrilicas">
+                        </div>
+                        <div class="especialidades-des">
+                            <h3>Acrílicas</h3>
+                            <p>Extensión de acrílico que forma uñas más largas, gruesas y resistentes. Añadiendo
+                                distintas formas, diseños y colores a tu elección.
+                            </p>
+                        </div>
+                        <div class="especialidades-btn"><a onclick="enviarMensaje('Uñas Acrilicas')">ME INTERESA</a></div>
+                    </div>
+                    <div class="card-especialidades cards-unas">
+                        <div class="especialidades-img">
+                            <img src="/img/especialidades/Uñas Xpress Gel.JPG" alt="Express Gel">
+                        </div>
+                        <div class="especialidades-des">
+                            <h3>Express Gel</h3>
+                            <p>Esmaltado y diseño perfecto con geles
+                                semi permanentes, dando como resultado uñas más ligeras que unas acrílicas.
+                            </p>
+                        </div>
+                        <div class="especialidades-btn"><a onclick="enviarMensaje('Uñas Express Gel')">ME INTERESA</a></div>
+                    </div>
+                    <div class="card-especialidades cards-unas">
+                        <div class="especialidades-img">
+                            <img src="/img/especialidades/Uñas Gel Semi.JPG" alt="Gel Semipermanente">
+                        </div>
+                        <div class="especialidades-des">
+                            <h3>Gel Semipermanente</h3>
+                            <p>Esmaltado en las uñas naturales, sin extensión ni polímeros. Manicura perfecta y pulcra.
+                            </p>
+                        </div>
+                        <div class="especialidades-btn"><a onclick="enviarMensaje('Uñas Gel Semipermanente')">ME INTERESA</a></div>
+                    </div>
+                    <div class="card-especialidades cards-unas">
+                        <div class="especialidades-img">
+                            <img src="/img/especialidades/Pedi Jelly Spa.JPG" alt="Pedi Jelly Spa">
+                        </div>
+                        <div class="especialidades-des">
+                            <h3>Pedi Jelly Spa</h3>
+                            <p>Es un tratamiento que hidrata y suaviza la piel de tus pies. Gracias a su textura
+                                gelatinosa, relaja y exfolia preparándolos para cualquier tratamiento posterior.
+                            </p>
+                        </div>
+                        <div class="especialidades-btn"><a onclick="enviarMensaje('Pedi Jelly Spa')">ME INTERESA</a></div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="container-especialidades no-select">
+                <div class="slider-especialidades">
+                    <div class="card-especialidades cards-unas">
+                        <div class="especialidades-img">
+                            <img src="/img/especialidades/sociales.jpg" alt="Sociales">
+                        </div>
+                        <div class="especialidades-des">
+                            <h3>Sociales</h3>
+                            <p>Finalidad de resaltar tu belleza natural y darte un aspecto apto para cualquier evento,
+                                no importa cuán formal, elegante o relajado sea.
+                            </p>
+                        </div>
+                        <div class="especialidades-btn"><a onclick="enviarMensaje('Maquillaje Sociales')">ME INTERESA</a></div>
+                    </div>
+                    <div class="card-especialidades cards-unas">
+                        <div class="especialidades-img">
+                            <img src="/img/especialidades/Maquillaje Nupcial.JPG" alt="Nupcial">
+                        </div>
+                        <div class="especialidades-des">
+                            <h3>Nupcial</h3>
+                            <p>Realzar los rasgos característicos de la novia a través del maquillaje.
+                                La piel es la protagonista por ello es importante que esté bien perfeccionada.
+                            </p>
+                        </div>
+                        <div class="especialidades-btn"><a onclick="enviarMensaje('Maquillaje Nupcial')">ME INTERESA</a></div>
+                    </div>
+                    <div class="card-especialidades cards-unas">
+                        <div class="especialidades-img">
+                            <img src="/img//especialidades/Maquillaje XV años.JPG" alt="XV Años">
+                        </div>
+                        <div class="especialidades-des">
+                            <h3>XV Años</h3>
+                            <p>Maquillaje elegante que debe resaltar toda la belleza única de una mujer joven en sus 15
+                                años. Natural, hermoso y nunca sobrecargado.
+                            </p>
+                        </div>
+                        <div class="especialidades-btn"><a onclick="enviarMensaje('Maquillaje XV Años')">ME INTERESA</a></div>
+                    </div>
+                    <div class="card-especialidades cards-unas">
+                        <div class="especialidades-img">
+                            <img src="/img/especialidades/Maquillaje noche.JPG" alt="Noche Glam">
+                        </div>
+                        <div class="especialidades-des">
+                            <h3>Noche / Glam</h3>
+                            <p>
+                                Maquillaje de noche debe funcionar mejor bajo la luz artificial. Utilizando colores
+                                llamativos en sombras de ojos y labios.
+                            </p>
+                        </div>
+                        <div class="especialidades-btn"><a onclick="enviarMensaje('Maquillaje Noche / Glam')">ME INTERESA</a></div>
+                    </div>
+                    <div class="card-especialidades cards-unas">
+                        <div class="especialidades-img">
+                            <img src="/img/especialidades/Maquillaje prueba.JPG" alt="Pruebas">
+                        </div>
+                        <div class="especialidades-des">
+                            <h3>Pruebas</h3>
+                            <p>
+                                Encuentra lo que mejor te queda de
+                                acuerdo con tu tono de piel, estructura del rostro, tipo de ojos, color del cabello, tu
+                                tipo de vestido.
+                            </p>
+                        </div>
+                        <div class="especialidades-btn"><a onclick="enviarMensaje('Un Servicio Personalizado de Maquillaje')">ME INTERESA</a></div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="container-especialidades no-select">
+                <div class="slider-especialidades">
+                    <div class="card-especialidades cards-unas">
+                        <div class="especialidades-img">
+                            <img src="/img/especialidades/Color. Balayage.JPG" alt="Balayage">
+                        </div>
+                        <div class="especialidades-des">
+                            <h3>Balayage</h3>
+                            <p>
+                                La técnica crea un cabello ligeramente aclarado que luce con un aspecto natural como
+                                aclarado por el sol, con tonos más claros en las puntas.
+                            </p>
+                        </div>
+                        <div class="especialidades-btn"><a onclick="enviarMensaje('Balayage')">ME INTERESA</a></div>
+                    </div>
+                    <div class="card-especialidades cards-unas">
+                        <div class="especialidades-img">
+                            <img src="/img/especialidades/Color. Babylights.JPG" alt="Babylights">
+                        </div>
+                        <div class="especialidades-des">
+                            <h3>Babylights</h3>
+                            <p>
+                                Son las mechas de moda, perfectas para iluminar el cabello y hacer que parezca tu color
+                                natural. Estas mechas son tan finas que son imperceptibles.
+                            </p>
+                        </div>
+                        <div class="especialidades-btn"><a onclick="enviarMensaje('BabyLights')">ME INTERESA</a></div>
+                    </div>
+                    <div class="card-especialidades cards-unas">
+                        <div class="especialidades-img">
+                            <img src="/img/especialidades/Color. Cortinas.JPG" alt="Cortinas">
+                        </div>
+                        <div class="especialidades-des">
+                            <h3>Cortinas</h3>
+                            <p>
+                                Técnica de teñido que se caracteriza por aplicar tonos de color de manera sutil y
+                                degradada, creando un efecto similar al de las cortinas.
+                            </p>
+                        </div>
+                        <div class="especialidades-btn"><a onclick="enviarMensaje('Cortinas')">ME INTERESA</a></div>
+                    </div>
+                    
+                    <div class="card-especialidades cards-unas">
+                        <div class="especialidades-img">
+                            <img src="/img/especialidades/Color. Global.JPG" alt="Global">
+                        </div>
+                        <div class="especialidades-des">
+                            <h3>Globales</h3>
+                            <p>
+                                Técnica que cubre el cabello de un solo tono desde la raíz hasta las puntas.
+                                Generalmente para cubrir las canas y ofrecer una base uniforme.
+                            </p>
+                        </div>
+                        <div class="especialidades-btn"><a onclick="enviarMensaje('Globales')">ME INTERESA</a></div>
+                    </div>
+                    <div class="card-especialidades cards-unas">
+                        <div class="especialidades-img">
+                            <img src="/img/especialidades/Color. Ombré.JPG" alt="Ombré">
+                        </div>
+                        <div class="especialidades-des">
+                            <h3>Ombré</h3>
+                            <p>
+                                Degradado que empieza en las raíces y se extiende hasta las puntas,
+                                volviéndose cada vez más claro, dando un efecto desvanecido.
+                            </p>
+                        </div>
+                        <div class="especialidades-btn"><a onclick="enviarMensaje('Ombré')">ME INTERESA</a></div>
+                    </div>
+                    <div class="card-especialidades cards-unas">
+                        <div class="especialidades-img">
+                            <img src="/img/especialidades/Color. Canas.JPG" alt="Retoque de canas">
+                        </div>
+                        <div class="especialidades-des">
+                            <h3>Retoque de canas</h3>
+                            <p>
+                                Retoque entre las cuatro y
+                                seis semanas para que tu cabello luzca siempre increíble, eliminando tonalidades
+                                indeseadas.
+                            </p>
+                        </div>
+                        <div class="especialidades-btn"><a onclick="enviarMensaje('Retoque de Canas')">ME INTERESA</a></div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="container-especialidades no-select">
+                <div class="slider-especialidades">
+                    <div class="card-especialidades cards-unas">
+                        <div class="especialidades-img">
+                            <img src="/img/especialidades/Keratina Japonesa.JPG" alt="Keratina japonesa">
+                        </div>
+                        <div class="especialidades-des">
+                            <h3>Japonesa</h3>
+                            <p>
+                                Hecha a base de colágeno, vitaminas y áloe vera que nutrirán desde la raíz hasta las
+                                puntas y dejando el cabello totalmente lacio.
+                            </p>
+                        </div>
+                        <div class="especialidades-btn"><a onclick="enviarMensaje('Japonesa')">ME INTERESA</a></div>
+                    </div>
+                    <div class="card-especialidades cards-unas">
+                        <div class="especialidades-img">
+                            <img src="/img/especialidades/Keratina Brasileña.JPG" alt="Keratina brasieña">
+                        </div>
+                        <div class="especialidades-des">
+                            <h3>Brasileña</h3>
+                            <p>
+                                Restaura cabellos dañados, esponjado, con puntas abiertas y resecas. Se puede aplicar en
+                                cabello decolorado, grueso y virgen.</p>
+                        </div>
+                        <div class="especialidades-btn"><a onclick="enviarMensaje('Brasileña')">ME INTERESA</a></div>
+                    </div>
+                    <div class="card-especialidades cards-unas">
+                        <div class="especialidades-img">
+                            <img src="/img/especialidades/Keratina Taninoplastia.JPG" alt="Keratina Taninoplastia">
+                        </div>
+                        <div class="especialidades-des">
+                            <h3>Taninoplastia</h3>
+                            <p>
+                                Tratamiento capilar que utiliza taninos naturales para alisar y mejorar la salud
+                                del cabello. Proporciona un acabado suave y manejable. </p>
+                        </div>
+                        <div class="especialidades-btn"><a onclick="enviarMensaje('Taninoplastia')">ME INTERESA</a></div>
+                    </div>
+                    <div class="card-especialidades cards-unas">
+                        <div class="especialidades-img">
+                            <img src="/img/especialidades/Espejo.JPG" alt="Efecto Espejo">
+                        </div>
+                        <div class="especialidades-des">
+                            <h3>Efecto espejo</h3>
+                            <p>
+                                Deja un lacio con efecto plastificado pero sin dañar el cabello para dejarlo súper
+                                brilloso y muy sedoso.
+                            </p>
+                        </div>
+                        <div class="especialidades-btn"><a onclick="enviarMensaje('Efecto Espejo')">ME INTERESA</a></div>
+                    </div>
+                </div>
+            </div>
+
+
+        </section>
+
+        <section class="break-container">
+            <div class="break-filtro"></div>
+            <div class="break">
+                <div class="container-img">
+                    <img src="/img/Inicio/Color. Babylights.JPG" alt="Imagen Ilustrativa" />
+                </div>
+                <div class="container-img">
+                    <img src="/img/Inicio/img2.jpg" alt="Imagen Ilustrativa" />
+                </div>
+                <div class="container-img">
+                    <img src="/img/Inicio/img3.jpg" alt="Imagen Ilustrativa" />
+                </div>
+                <div class="container-img">
+                    <img src="/img/Inicio/Pedicura.JPG" alt="Imagen Ilustrativa" />
+                </div>
+                <div class="container-img">
+                    <img src="/img/Inicio/Pestañas Set Clean G.PNG" alt="Imagen Ilustrativa" />
+                </div>
+                <div class="container-img">
+                    <img src="/img/Inicio/Uñas Xpress Gel.JPG" alt="Imagen Ilustrativa" />
+                </div>
+                <div class="container-img">
+                    <img src="/img/otros/1.jpeg" alt="Imagen Ilustrativa" />
+                </div>
+                <div class="container-img">
+                    <img src="/img/otros/4.jpeg" alt="Imagen Ilustrativa" />
+                </div>
+                <div class="container-img">
+                    <img src="/img/otros/5.jpeg" alt="Imagen Ilustrativa" />
+                </div>
+                <div class="container-img">
+                    <img src="/img/otros/6.jpeg" alt="Imagen Ilustrativa" />
+                </div>
+                <div class="container-img">
+                    <img src="/img/otros/7.jpeg" alt="Imagen Ilustrativa" />
+                </div>
+                <div class="container-img">
+                    <img src="/img/otros/8.jpeg" alt="Imagen Ilustrativa" />
+                </div>
+                <div class="container-img">
+                    <img src="/img/otros/9.jpeg" alt="Imagen Ilustrativa" />
+                </div>
+                <div class="container-img">
+                    <img src="/img/otros/img4.jpg" alt="Imagen Ilustrativa" />
+                </div>
+                <div class="container-img">
+                    <img src="/img/otros/img20.jpg" alt="Imagen Ilustrativa" />
+                </div>
+                <div class="container-img">
+                    <img src="/img/otros/img21.jpg" alt="Imagen Ilustrativa" />
+                </div>
+                <div class="container-img">
+                    <img src="/img/otros/img22.jpg" alt="Imagen Ilustrativa" />
+                </div>
+                <div class="container-img">
+                    <img src="/img/otros/img24.jpg" alt="Imagen Ilustrativa" />
+                </div>
+                <div class="container-img">
+                    <img src="/img/especialidades/Ceja 6K.JPG" alt="Imagen Ilustrativa" />
+                </div>
+                <div class="container-img">
+                    <img src="/img/especialidades/Color. Balayage.JPG" alt="Imagen Ilustrativa" />
+                </div>
+                <div class="container-img">
+                    <img src="/img/especialidades/Color. Cortinas.JPG" alt="Imagen Ilustrativa" />
+                </div>
+                <div class="container-img">
+                    <img src="/img/especialidades/Color. Macrolights.JPG" alt="Imagen Ilustrativa" />
+                </div>
+                <div class="container-img">
+                    <img src="/img/especialidades/Keratina Brasileña.JPG" alt="Imagen Ilustrativa" />
+                </div>
+                <div class="container-img">
+                    <img src="/img/especialidades/Keratina Taninoplastia.JPG" alt="Imagen Ilustrativa" />
+                </div>
+                <div class="container-img">
+                    <img src="/img/especialidades/Maquillaje Nupcial.JPG" alt="Imagen Ilustrativa" />
+                </div>
+                <div class="container-img">
+                    <img src="/img/especialidades/Maquillaje XV años.JPG" alt="Imagen Ilustrativa" />
+                </div>
+                <div class="container-img">
+                    <img src="/img/especialidades/Pedicura.JPG" alt="Imagen Ilustrativa" />
+                </div>
+                <div class="container-img">
+                    <img src="/img/especialidades/Pestañas Set Clean G.PNG" alt="Imagen Ilustrativa" />
+                </div>
+                <div class="container-img">
+                    <img src="/img/especialidades/Pestañas Set Ele.JPG" alt="Imagen Ilustrativa" />
+                </div>
+                <div class="container-img">
+                    <img src="/img/especialidades/Uñas Gel Semi.JPG" alt="Imagen Ilustrativa" />
+                </div>
+                <div class="container-img">
+                    <img src="/img/especialidades/Color. Babylights.JPG" alt="Imagen Ilustrativa" />
+                </div>
+                <div class="container-img">
+                    <img src="/img/especialidades/Color. Global.JPG" alt="Imagen Ilustrativa" />
+                </div>
+                <div class="container-img">
+                    <img src="/img/especialidades/Color. Ombré.JPG" alt="Imagen Ilustrativa" />
+                </div>
+                <div class="container-img">
+                    <img src="/img/especialidades/Keratina Japonesa.JPG" alt="Imagen Ilustrativa" />
+                </div>
+                <div class="container-img">
+                    <img src="/img/especialidades/Maquillaje noche.JPG" alt="Imagen Ilustrativa" />
+                </div>
+                <div class="container-img">
+                    <img src="/img/especialidades/Pedi Jelly Spa.JPG" alt="Imagen Ilustrativa" />
+                </div>
+                <div class="container-img">
+                    <img src="/img/especialidades/Pestañas Set Classic .JPG" alt="Imagen Ilustrativa" />
+                </div>
+                <div class="container-img">
+                    <img src="/img/especialidades/Pestañas Set Diva.JPG" alt="Imagen Ilustrativa" />
+                </div>
+                <div class="container-img">
+                    <img src="/img/especialidades/Uñas Acrílicas.JPG" alt="Imagen Ilustrativa" />
+                </div>
+                <div class="container-img">
+                    <img src="/img/especialidades/Uñas Xpress Gel.JPG" alt="Imagen Ilustrativa" />
+                </div>
+            </div>
+        </section>
+
+        <section id="Academia" class="miacademia">
+            <div class="miacademia-info">
+                <div class="title">
+                    <span class="whatis">Academia</span>
+                    <span class="liz">Liz Velvet</span>
+                </div>
+                <div class="info">
+                    En Liz Velvet Academia, te ofrecemos una experiencia educativa
+                    integral con cursos especializados en diversas áreas de extesión de
+                    pestañas. Ya seas un principiante que busca dar sus primeros pasos
+                    en el mundo de la estética, o un profesional con años de experiencia
+                    que desea perfeccionar sus técnicas y mantenerse al día con las
+                    últimas tendencias, tenemos una formación diseñada para ti. Desde el
+                    arte de la técnica clásica y volumen artesanal perfecto hasta
+                    aplicaciones de fantasía y artísticas.
+                </div>
+            </div>
+            <div class="container-academia">
+                <div class="academia-foto">
+                    <div class="_foto">
+                        <img src="/img/general/fotoperfil.jpeg" alt="" />
+                    </div>
+                    <div class="_img">
+                        <img src="/img/Inicio/IMG_6037.jpg" alt="Interior negocio" />
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="informacion-academia">
+            <div class="card-info">
+                <span>03+</span>
+                <p>Certificaciones</p>
+            </div>
+            <div class="card-info">
+                <span>07+</span>
+                <p>Reconocimientos</p>
+            </div>
+            <div class="card-info">
+                <span>03+</span>
+                <p>Capacitaciones</p>
+            </div>
+            <div class="card-info">
+                <span>15+</span>
+                <p>Clientes</p>
+            </div>
+        </section>
+
+
+        <section class="cursos">
+            <div class="curso-filtro">
+                <img src="/svg/Mass Circles.svg" />
+            </div>
+            <div class="curso-container">
+                <div class="curso-info">
+                    <div class="curso-titulo">
+                        <span class="curso-titulo-uno">--&nbsp&nbsp</span>
+                        <span class="curso-titulo-dos">CURSO <span>&nbsp;&nbsp;&nbsp;Inicial.&nbsp;&nbsp;&nbsp;
+                            </span></span>
+                    </div>
+                    <div class="curso-informacion">
+                        <p>
+                            <span>Dirigido para: <br />Personas con conocimientos
+                                básicos</span>
+                            que buscan capacitarse y certificarse, adquiriendo las
+                            habilidades necesarias para ofrecer un servicio de alta calidad.
+                        </p>
+                        <p class="hiden-movil">
+                            <span>Aprende la técnica clásica</span> y recibe una
+                            introducción a las <span>fibras tecnológicas</span>,
+                            adquiriendo habilidades clave para destacar en el sector.
+                        </p>
+                        <ul>
+                            <li>
+                                <span>35 horas de formación teórico-práctica.</span>
+                            </li>
+                            <li>
+                                <span>Duración de 7 días</span> con horarios flexibles
+                            </li>
+                            <li>
+                                <span>Módulos de 5 horas</span> que facilitan el
+                                aprendizaje.
+                            </li>
+                            <li>
+                                <span>Certificación internacional</span> al finalizar el
+                                curso
+                            </li>
+                            <li>
+                                <span>Material completo incluido</span>: guía, kit de
+                                insumos, y herramientas teóricas y prácticas
+                            </li>
+                        </ul>
+                        <a target="_blank" href="/img/curso/curso_inicial.pdf" class="temario">Consulta el
+                            temario</a>
+                    </div>
+                    <div class="curso-footer">
+                        <div class="curso-button" onclick="enviarMensajeCurso('Curso Inicial')">COMIENZA YA</div>
+                        <div class="curso-icons">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="cursoimg">
+                    <img src="/img/curso/curso_inicial.JPG" alt="Curso inicial" />
+                </div>
+            </div>
+            <div class="curso-container">
+                <div class="curso-info">
+                    <div class="curso-titulo">
+                        <span class="curso-titulo-uno">--&nbsp&nbsp</span>
+                        <span class="curso-titulo-dos">CURSO
+                            <span>&nbsp;&nbsp;&nbsp;AVANZADO.&nbsp;&nbsp;&nbsp;</span></span>
+                    </div>
+                    <div class="curso-informacion">
+                        <p>
+                            <span>Dirigido para: <br />
+                                Lashistas con experiencia dominando técnica clásica</span>
+                            logrando aplicaciones de volumen americano, full set perfecto, top line y línea rota + ocho
+                            efectos artísticos.
+                        </p>
+                        <p class="hiden-movil">
+                            <span>Instrúyete con procedimientos artesanales para tus servicios</span>, aportando los
+                            efectos en tendencia más actuales y solicitados.
+                        </p>
+                        <ul>
+                            <li>
+                                <span>30 horas de formación teórico-práctica.</span>
+                            </li>
+                            <li>
+                                <span>Duración de 6 días</span> con horarios flexibles
+                            </li>
+                            <li>
+                                <span>Módulos de 5 horas</span> que facilitan el
+                                aprendizaje.
+                            </li>
+                            <li>
+                                <span>Certificación internacional</span> al finalizar el
+                                curso
+                            </li>
+                            <li>
+                                <span>Material completo incluido</span>: guía, kit de
+                                insumos y herramientas teóricas y prácticas
+                            </li>
+                        </ul>
+                        <a target="_blank" href="/img/curso/curso_avanzado.pdf" class="temario">Consulta el
+                            temario</a>
+                    </div>
+                    <div class="curso-footer">
+                        <div class="curso-button" onclick="enviarMensajeCurso('Curso Avanzado')">COMIENZA YA</div>
+                        <div class="curso-icons">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="cursoimg">
+                    <img src="/img/curso/curso_avanzado.JPG" alt="Curso Avanzado" />
+                </div>
+            </div>
+        </section>
+
+
+        <section class="referencias">
+            <div class="title">
+                <span class="liz">Referencias</span>
+            </div>
+            <div class="container-referencias">
+                <div class="container-card">
+                    <div class="card-img">
+                        <img src="/img/referencias/fani.jpg" alt="Estefanía Ramírez" />
+                    </div>
+                    <div class="info-card">
+                        <p class="title">LVA001 | Estefanía Ramírez</p>
+                        <div class="icons">
+                            <a target="_blank" href="https://www.facebook.com/fany.moreno.10236?mibextid=LQQJ4d"><i
+                                    class="fa-brands fa-facebook"></i>Fany Moreno</a>
+                            <a target="_blank" href="https://wa.me/+524481153042"><i
+                                    class="fa-brands fa-whatsapp"></i>448 115 3042</a>
+                            <a target="_blank"
+                                href="https://www.instagram.com/fany.moreno.102361?igsh=N3BmYnBwc2pnbGVz"><i
+                                    class="fa-brands fa-instagram"></i>Fany Moreno</a>
+                            <a><i class="fa-solid fa-location-dot"></i>El Saúz Alto, Pedro Escobedo</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="container-card">
+                    <div class="card-img">
+                        <img src="/img/referencias/gabi.jpg" alt="Áurea Gabriela Martínez" />
+                    </div>
+                    <div class="info-card">
+                        <p class="title">LVA002 | Áurea Gabriela Martínez</p>
+                        <div class="icons">
+                            <a target="_blank"
+                                href="https://www.facebook.com/share/YvuzQ3GyvKuxkqRp/?mibextid=LQQJ4d"><i
+                                    class="fa-brands fa-facebook"></i>Gaby lash style</a>
+                            <a target="_blank" href="https://wa.me/+524428311019"><i
+                                    class="fa-brands fa-whatsapp"></i>442 831 1019</a>
+                            <a target="_blank"
+                                href="https://www.instagram.com/agabimartinezsilva?igsh=aHlwMmc4dmphemJm"><i
+                                    class="fa-brands fa-instagram"></i>agabimartinezsilva</a>
+                            <a><i class="fa-solid fa-location-dot"></i>Guadalupe Septien, Pedro
+                                Escobedo.</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="container-card">
+                    <div class="card-img">
+                        <img src="/img/referencias/araceli.jpg" alt="Araceli Sánchez Monera" />
+                    </div>
+                    <div class="info-card">
+                        <p class="title">LVA003 | Araceli Sánchez Monera</p>
+                        <div class="icons">
+                            <a target="_blank"
+                                href="https://www.facebook.com/share/VHSFscAqEw77esUq/?mibextid=LQQJ4d"><i
+                                    class="fa-brands fa-facebook"></i>Araceli Sánchez </a>
+                            <a target="_blank" href="https://wa.me/+524423898065"><i
+                                    class="fa-brands fa-whatsapp"></i>442 389 8065</a>
+                            <a target="_blank"
+                                href="https://www.instagram.com/aracelisanchez8672?igsh=NGpjeXp3YmFsdGVs"><i
+                                    class="fa-brands fa-instagram"></i>aracelisanchez8672</a>
+                            <a><i class="fa-solid fa-location-dot"></i>Pedro Escobedo</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="container-card">
+                    <div class="card-img">
+                        <img src="/img/referencias/fer.jpg" alt="María Fernanda Arista" />
+                    </div>
+                    <div class="info-card">
+                        <p class="title">LVA004 | María Fernanda Arista</p>
+                        <div class="icons">
+                            <a target="_blank"
+                                href="https://www.facebook.com/share/CqFtse3cY4sYe9Vv/?mibextid=LQQJ4d"><i
+                                    class="fa-brands fa-facebook"></i>Fernanda Arista</a>
+                            <a target="_blank" href="https://wa.me/+524481073278"><i
+                                    class="fa-brands fa-whatsapp"></i>448 107 3278</a>
+                            <a target="_blank" href="https://www.instagram.com/fastudio24?igsh=OWduamVuMmVwOG50"><i
+                                    class="fa-brands fa-instagram"></i>feraristah</a>
+                            <a href=""><i class="fa-solid fa-location-dot"></i>Pedro Escobedo</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="container-card">
+                    <div class="card-img">
+                        <img src="/img/referencias/jessi.jpg" alt="Jessica Isamar Martínez" />
+                    </div>
+                    <div class="info-card">
+                        <p class="title">LVA005 | Jessica Isamar Martínez</p>
+                        <div class="icons">
+                            <a target="_blank"
+                                href="https://www.facebook.com/profile.php? id=61566924430565&mibextid=LQQJ4d"><i
+                                    class="fa-brands fa-facebook"></i>Isamar</a>
+                            <a target="_blank" href="https://wa.me/+524481825708"><i
+                                    class="fa-brands fa-whatsapp"></i>448 182 5708</a>
+                            <a target="_blank"
+                                href="https://www.instagram.com/isamar_1604?igsh=MXBoaWxwcjB5OWQ0Yw%3D%3D&utm_source=qr"><i
+                                    class="fa-brands fa-instagram"></i>isamar_1604</a>
+                            <a href=""><i class="fa-solid fa-location-dot"></i>Ignacio Pérez, Pedro Escobedo</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="referencia-fil">
+                <img src="/svg/Wave Line (1).svg" alt="" />
+            </div>
+        </section>
+
+        <section id="Contacto" class="visitanos">
+            <div class="title">
+                <span class="liz">¡ Visitanos !</span>
+            </div>
+
+            <p>
+
+                Visítanos y descubre la experiencia LizVelvet! Nuestro salón está
+                listo para ofrecerte los mejores servicios de belleza en un ambiente
+                acogedor. Encuéntranos en "Manuel Avila Camacho #5, Guadalupe
+                Septién, Pedro Escobedo, Querétaro" y agenda tu cita hoy mismo
+            </p>
+            <iframe <iframe
+                src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3736.514317415573!2d-100.11882392475707!3d20.526126981000424!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjDCsDMxJzM0LjEiTiAxMDDCsDA2JzU4LjUiVw!5e0!3m2!1ses-419!2smx!4v1728231683930!5m2!1ses-419!2smx"
+                style="border: 0" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+    </main>
+    <footer>
+        <div class="fooimg">
+            <img src="/img/general/sello.png" alt="Sello">
         </div>
-        <div class="contador">
-            <div class="days">
-                <span id="days"></span>
-                <p>Días</p>
-            </div>
-            <div class="hours">
-                <span id="hours"></span>
-                <p>Horas</p>
-            </div>
-            <div class="minutus">
-                <span id="minutes"></span>
-                <p>Minutos</p>
-            </div>
-            <div class="seconds">
-                <span id="seconds"></span>
-                <p>Segundos</p>
-            </div>
-        </div>
-        <div class="redes">
-            <a target="_blank" href="https://www.facebook.com/profile.php?id=100088080974062&mibextid=LQQJ4d"
-                title="Ir a perfil de Facebook"><i class="fa-brands fa-facebook"></i></a>
+        <p>
+            <span>© 2024 LizVelvet. Todos los derechos reservados.</span>
+        </p>
+        <div>
+            Encuentranos en:
             <a target="_blank" href="https://wa.me/+524482015506" title="Ir a perfil WhatsApp"><i
-                    class="fa-brands fa-whatsapp"></i></a>
+                    class="fa-brands fa-whatsapp"></i>448 201 5506</a> <a target="_blank"
+                href="https://www.facebook.com/profile.php?id=100088080974062&mibextid=LQQJ4d"
+                title="Ir a perfil de Facebook"><i class="fa-brands fa-facebook"></i> Liz Velvet</a>
             <a target="_blank"
                 href="https://www.instagram.com/liz_velvet?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
-                title="Ir a perfil de Instagram"><i class="fa-brands fa-instagram"></i></a>
+                title="Ir a perfil de Instagram"><i class="fa-brands fa-instagram"></i> Liz_Velvet</a>
         </div>
-    </main>
+        <p>
+            <br>
+            <span>Sobre Nosotros</span><br>
+            En <span>Liz Velvet</span>, estamos comprometidos con realzar tu belleza utilizando las últimas técnicas y
+            productos de
+            alta calidad. Contamos con personal certificado para ofrecerte servicios especializados en extensión de
+            pestañas, manicuras, maquillaje y tratamientos capilares. Nuestra misión es brindarte una experiencia
+            personalizada que no solo resalte tus rasgos, sino que también te haga sentir segura y empoderada. Nos
+            enfocamos en garantizar la satisfacción de nuestros clientes, cuidando cada detalle para que obtengas los
+            mejores resultados posibles.
+        </p>
+        <br>
+        <br>
+        <br>
+        <p>
+            <span>Diseño web por: Techno Solucitions</span><br>
+            Gracias a Techno Solutions, especialista en diseño web y experiencia de usuario, por
+            ayudarnos a crear una plataforma que refleja la calidad y dedicación de Liz Velvet. Si estás interesado en
+            desarrollar tu propia página web, no dudes en contactarlos. <br>
+        </p>
+        <div>
+            <a target="_blank" href="https://wa.me/+524481164569" title="Ir a perfil WhatsApp"><i
+                    class="fa-brands fa-whatsapp"> </i> 448 116 4569</a>
+        </div>
+    </footer>
+
+    <script src="/actionsMessage.js"></script>
 </body>
 
 </html>
