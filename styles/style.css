@@ -35,7 +35,7 @@ body {
 .navegation {
     position: fixed;
     width: 100%;
-    height: 7vh;
+    height: 7.7vh;
     background-color: #FFF;
     z-index: 150;
 }
