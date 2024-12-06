@@ -65,6 +65,7 @@ header{
 .mobile-menu {
     position: absolute;
     opacity: 0;
+    z-index: -1;
 }
 
 .navbar li {
@@ -455,7 +456,7 @@ footer div a:hover {
         width: 100%;
         height: 100vh;
         background-color: #FFF;
-        z-index: 1;
+        z-index: -1;
         display: flex;
         align-items: center;
         justify-content: center;
