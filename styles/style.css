@@ -13,6 +13,8 @@
 html {
     font-family: 'Montserrat', sans-serif;
     scroll-behavior: smooth;
+    overflow-x: hidden;
+
 }
 
 * {
@@ -30,6 +32,11 @@ html {
 body {
     position: relative;
     background-color: #FFFFFF;
+
+}
+
+header{
+    overflow: hidden;
 }
 
 .navegation {
@@ -38,6 +45,7 @@ body {
     height: 7.7vh;
     background-color: #FFF;
     z-index: 150;
+    overflow: hidden;
 }
 
 
@@ -170,7 +178,9 @@ footer div a:hover {
 
 @media screen and (max-width: 768px) {
 
-
+    main{
+        overflow-x: hidden;
+    }
     .navegation {
         width: 100%;
         height: 7vh;
