@@ -4,8 +4,8 @@ const createSnowflake = () => {
   snowflake.classList.add("snowflake");
   snowflake.textContent = "❄";
   snowflake.style.left = Math.random() * window.innerWidth + "px";
-  snowflake.style.animationDuration = Math.random() * 5 + 10 + "s"; // Caída más rápida o más lenta
-  snowflake.style.fontSize = Math.random() * 15 + 24 + "px"; // Tamaño de copos variado
+  snowflake.style.animationDuration = Math.random() * 3 + 10 + "s"; // Caída más rápida o más lenta
+  snowflake.style.fontSize = Math.random() * 10 + 21 + "px"; // Tamaño de copos variado
   snowflake.style.opacity = Math.random() * 0.8 + 0.4;
 
   snowContainer.appendChild(snowflake);
@@ -13,8 +13,8 @@ const createSnowflake = () => {
   // Eliminar el copo después de que haya salido de la pantalla
   setTimeout(() => {
     snowflake.remove();
-  }, 7800);
+  }, 7500);
 };
 
 // Crear copos de nieve continuamente
-setInterval(createSnowflake, 200);
+setInterval(createSnowflake, 300);
