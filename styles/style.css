@@ -35,7 +35,7 @@ body {
 
 }
 
-header{
+header {
     overflow: hidden;
 }
 
@@ -57,11 +57,13 @@ header{
     list-style: none;
     gap: 0.2rem;
 }
-.mobile{
+
+.mobile {
     position: absolute;
     opacity: 0;
     z-index: -1;
 }
+
 .mobile-menu {
     position: absolute;
     opacity: 0;
@@ -180,9 +182,10 @@ footer div a:hover {
 
 @media screen and (max-width: 768px) {
 
-    main{
+    main {
         overflow-x: hidden;
     }
+
     .navegation {
         width: 100%;
         height: 7vh;
@@ -241,15 +244,18 @@ footer div a:hover {
         display: flex;
         align-items: center;
         justify-content: center;
-        border-radius: 50%;
         font-size: 1.3rem;
         background-color: var(--primary-color);
         color: var(--background-color);
-        box-shadow: 0px 2px 5px 2px rgba(122, 19, 83, 0.3);
+        box-shadow: 0px 2px 5px 2px rgba(255, 255, 255, 0.3);
+        border-radius: 50%;
     }
+
     .mobile-menu:hover {
         cursor: pointer;
         transform: scale(1.1);
+        border-radius: 50%;
+
     }
 
 
@@ -442,7 +448,9 @@ footer div a:hover {
         font-size: 1.3rem;
         background-color: var(--primary-color);
         color: var(--background-color);
+
     }
+
     .mobile-menu:hover {
         cursor: pointer;
         transform: scale(1.1);
