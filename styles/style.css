@@ -442,7 +442,7 @@ footer div a:hover {
         font-size: 1.3rem;
         background-color: var(--primary-color);
         color: var(--background-color);
-        box-shadow: 0px 2px 5px 2px rgba(122, 19, 83, 0.3);
+        box-shadow: 0px 2px 2px 2px rgba(122, 19, 83, 0.2);
     }
     .mobile-menu:hover {
         cursor: pointer;
