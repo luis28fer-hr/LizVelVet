@@ -311,21 +311,21 @@
     .referencias {
         position: relative;
         width: 100%;
-        height: 410vh;
+        height: 435vh;
         gap: 2rem;
         overflow: hidden;
     }
 
 
     .referencias .container-referencias {
-        width: 93%;
-        height: 95%;
+        width: 90%;
+        height: 97%;
         display: grid;
         grid-template-columns: repeat(1, 100%);
         grid-template-rows: repeat(7, 13%);
         align-items: center;
         justify-content: center;
-        gap: 1.2rem;
+        gap: 1.5rem;
         padding: 0 0 0 0;
     }
 
