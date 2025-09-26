@@ -311,7 +311,7 @@
     .referencias {
         position: relative;
         width: 100%;
-        height: 400vh;
+        height: 410vh;
         gap: 2rem;
         overflow: hidden;
     }
@@ -411,7 +411,7 @@
         width: 45%;
         height: auto;
         top: -10%;
-        left: -3%;
+        left: 0%;
         z-index: 10;
         opacity: 0.9;
         transition: all 0.3s ease-in-out;
