@@ -411,10 +411,10 @@
 
     .container-card .float-cert {
         position: absolute;
-        width: 48%;
+        width: 40%;
         height: auto;
         top: -10%;
-        left: -3%;
+        left: -5%;
         z-index: 10;
         opacity: 0.9;
         transition: all 0.3s ease-in-out;
