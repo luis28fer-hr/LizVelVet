@@ -444,7 +444,8 @@
     .presentation .arbolnavidad {
         width: 80%;
         height: 95%;
-   
+        bottom: 0;
+        right: 50;
         margin-right: 0;
         margin-bottom: 0;
         opacity: .5;
