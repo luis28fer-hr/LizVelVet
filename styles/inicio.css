@@ -4,9 +4,9 @@
     --text-color: #020202;
     --background-color: #EBF5EE;
     --background-color2: #F7F9F9;
-  }
+}
 
-.home{
+.home {
     position: relative;
     width: 100%;
     height: 101vh;
@@ -16,7 +16,7 @@
     overflow: hidden;
 }
 
-.home .presentation{
+.home .presentation {
     position: relative;
     width: 45%;
     height: 100%;
@@ -28,18 +28,20 @@
     gap: 0.5rem;
 }
 
-.presentation .text{
+.presentation .text {
     width: 75%;
     z-index: 5;
     margin-top: 2.5rem;
 }
-.presentation .text h2{
+
+.presentation .text h2 {
     font-size: 1.9rem;
-    font-weight: 500; 
+    font-weight: 500;
     line-height: 2.1rem;
     z-index: 5;
 }
-.presentation .text h2 div{
+
+.presentation .text h2 div {
     display: inline-block;
     width: 13rem;
     text-align: center;
@@ -50,12 +52,13 @@
     cursor: pointer;
     transition: all 0.3s ease;
 }
-.presentation .text h2 div:hover{
+
+.presentation .text h2 div:hover {
     background-color: #df1c70;
 }
 
 
-.logo{
+.logo {
     width: 75%;
     color: var(--text-color);
     font-size: 0.63rem;
@@ -63,7 +66,7 @@
     z-index: 5;
 }
 
-.presentation .logo span{
+.presentation .logo span {
     color: var(--primary-color);
     font-size: 3.7rem;
     font-family: "Mr Dafoe", cursive;
@@ -72,13 +75,14 @@
     margin-right: 0.7rem;
     transition: all 0.5s ease-in;
 }
-.presentation .logo span:hover{
-    color:  var(--secondary-color);
+
+.presentation .logo span:hover {
+    color: var(--secondary-color);
     font-size: 3.72rem;
 }
 
 
-.presentation .info{
+.presentation .info {
     position: relative;
     margin-top: 1.5rem;
     width: 75%;
@@ -93,7 +97,7 @@
 
 }
 
-.presentation .info div{
+.presentation .info div {
     cursor: pointer;
     width: auto;
     height: 100%;
@@ -101,17 +105,19 @@
     font-weight: 600;
     transition: all 0.7s ease;
 }
-.presentation .info div:hover{
+
+.presentation .info div:hover {
     transform: translateY(1rem);
 }
-.presentation .info div p{
+
+.presentation .info div p {
     color: var(--secondary-color);
     font-weight: 600;
     font-size: 1.9rem;
     font-style: italic;
 }
 
-.presentation .arbolnavidad{
+.presentation .arbolnavidad {
     position: absolute;
     width: 90%;
     height: 95%;
@@ -121,9 +127,11 @@
     margin-right: -20rem;
     margin-bottom: -2rem;
     opacity: .7;
+    user-select: none;
+
 }
 
-.presentation .svghome{
+.presentation .svghome {
     width: 110%;
     height: 80%;
     position: absolute;
@@ -131,33 +139,35 @@
     opacity: .9;
 }
 
-.home .collageimg{
+.home .collageimg {
     position: relative;
     width: 55%;
     height: 100%;
     overflow: hidden;
 }
-.home .collageimg .carr{
+
+.home .collageimg .carr {
     margin-top: -6vh;
     width: 100%;
     height: 99vh;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: repeat(2, 50%);
-    }
+}
 
-.carr div{
+.carr div {
     width: 100%;
     height: 100%;
     overflow: hidden;
     transition: all 0.5s ease;
 }
 
-.carr div:hover{
+.carr div:hover {
     transform: scale(1.07);
     z-index: 5;
 }
-.carr div img{
+
+.carr div img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -165,18 +175,19 @@
 }
 
 @media screen and (max-width: 768px) {
-    .home{
+    .home {
         width: 100%;
         height: 98vh;
         padding-top: 7vh;
-        flex-direction:column-reverse;
+        flex-direction: column-reverse;
     }
 
-    .home .presentation{
+    .home .presentation {
         width: 100%;
         height: 35%;
         gap: 0.5rem;
     }
+
     .medio {
         order: 1;
     }
@@ -188,46 +199,49 @@
     .abajo {
         order: 3;
     }
-    
-    .presentation .text{
+
+    .presentation .text {
         width: 95%;
         z-index: 5;
         margin-top: 0rem;
         text-align: center;
     }
 
-    .presentation .text h2{
+    .presentation .text h2 {
         font-size: 1.1rem;
-        font-weight: 500; 
+        font-weight: 500;
         line-height: 1.25rem;
     }
-    .presentation .text h2 div{
+
+    .presentation .text h2 div {
         width: 8rem;
         font-weight: 500;
     }
-    .presentation .text h2 div:hover{
+
+    .presentation .text h2 div:hover {
         background-color: #df1c70;
     }
-    
-    
-    .logo{
+
+
+    .logo {
         width: 100%;
         display: flex;
         align-items: center;
         justify-content: center;
         font-size: 0.6rem;
     }
-    
-    .presentation .logo span{
+
+    .presentation .logo span {
         font-size: 3.55rem;
         margin-right: 0.6rem;
     }
-    .presentation .logo span:hover{
+
+    .presentation .logo span:hover {
         font-size: 3.55rem;
     }
-    
-    
-    .presentation .info{
+
+
+    .presentation .info {
         position: relative;
         margin-top: 1rem;
         width: 88%;
@@ -236,68 +250,77 @@
         align-items: center;
         justify-content: center;
         text-align: center;
-        gap: 0.3rem;    
+        gap: 0.3rem;
     }
-    
-    .presentation .info div{
+
+    .presentation .info div {
         width: 33%;
         height: 100%;
         font-size: 0.95rem;
         transition: all 0.7s ease;
     }
-    .presentation .info div:hover{
+
+    .presentation .info div:hover {
         transform: translateY(0.5rem);
     }
-    .presentation .info div p{
+
+    .presentation .info div p {
         font-weight: 600;
         font-size: 1.55rem;
         font-style: italic;
         text-align: center;
     }
 
-    .abajo .arriba{
+    .abajo .arriba {
         order: 1;
     }
-    .abajo .medio{
+
+    .abajo .medio {
         order: 3;
     }
-    .abajo .abajo{
+
+    .abajo .abajo {
         order: 2;
     }
-    
-    
-    .presentation .svghome{
+
+
+    .presentation .svghome {
         width: 100%;
         height: 60%;
     }
-    .presentation .arbolnavidad{
-    position: absolute;
-    width: 90%;
-    height: 95%;
-    position: absolute;
-    bottom: 0;
-    right: 100;
-    margin-right: -20rem;
-    margin-bottom: -2rem;
-    opacity: .7;
-}
-    .home .collageimg{
+
+    .presentation .arbolnavidad {
+        position: absolute;
+        width: 90%;
+        height: 95%;
+        position: absolute;
+        bottom: 0;
+        right: 100;
+        margin-right: -20rem;
+        margin-bottom: -2rem;
+        opacity: .7;
+        user-select: none;
+
+    }
+
+    .home .collageimg {
         width: 100%;
         height: 65%;
     }
-    .home .collageimg .carr{
+
+    .home .collageimg .carr {
         margin-top: 0vh;
         width: 100%;
         height: 100%;
-        }
-    
-    
-    .carr div:hover{
+    }
+
+
+    .carr div:hover {
         transform: scale(1.05);
         z-index: 5;
     }
 
-    .carr div img{
+    .carr div img {
         width: 100%;
         height: 100%;
         object-fit: cover;
@@ -306,19 +329,21 @@
 
 
 }
+
 @media screen and (max-width: 480px) {
-    .home{
+    .home {
         width: 100%;
         height: 98vh;
         padding-top: 7vh;
-        flex-direction:column-reverse;
+        flex-direction: column-reverse;
     }
 
-    .home .presentation{
+    .home .presentation {
         width: 100%;
         height: 35%;
         gap: 0.5rem;
     }
+
     .medio {
         order: 1;
     }
@@ -330,46 +355,49 @@
     .abajo {
         order: 3;
     }
-    
-    .presentation .text{
+
+    .presentation .text {
         width: 95%;
         z-index: 5;
         margin-top: 0rem;
         text-align: center;
     }
 
-    .presentation .text h2{
+    .presentation .text h2 {
         font-size: 1rem;
-        font-weight: 500; 
+        font-weight: 500;
         line-height: 1.25rem;
     }
-    .presentation .text h2 div{
+
+    .presentation .text h2 div {
         width: 8rem;
         font-weight: 500;
     }
-    .presentation .text h2 div:hover{
+
+    .presentation .text h2 div:hover {
         background-color: #df1c70;
     }
-    
-    
-    .logo{
+
+
+    .logo {
         width: 100%;
         display: flex;
         align-items: center;
         justify-content: center;
         font-size: 0.5rem;
     }
-    
-    .presentation .logo span{
+
+    .presentation .logo span {
         font-size: 3.5rem;
         margin-right: 0.6rem;
     }
-    .presentation .logo span:hover{
+
+    .presentation .logo span:hover {
         font-size: 3.55rem;
     }
-    
-    
-    .presentation .info{
+
+
+    .presentation .info {
         position: relative;
         margin-top: 1rem;
         width: 88%;
@@ -378,68 +406,73 @@
         align-items: center;
         justify-content: center;
         text-align: center;
-        gap: 0.3rem;    
+        gap: 0.3rem;
     }
-    
-    .presentation .info div{
+
+    .presentation .info div {
         width: 33%;
         height: 100%;
         font-size: 0.9rem;
         transition: all 0.7s ease;
     }
-    .presentation .info div:hover{
+
+    .presentation .info div:hover {
         transform: translateY(0.5rem);
     }
-    .presentation .info div p{
+
+    .presentation .info div p {
         font-weight: 600;
         font-size: 1.5rem;
         font-style: italic;
         text-align: center;
     }
 
-    .abajo .arriba{
+    .abajo .arriba {
         order: 1;
     }
-    .abajo .medio{
+
+    .abajo .medio {
         order: 3;
     }
-    .abajo .abajo{
+
+    .abajo .abajo {
         order: 2;
     }
-    
-    
-    .presentation .svghome{
+
+
+    .presentation .svghome {
         width: 100%;
         height: 60%;
     }
-    .presentation .arbolnavidad{
-    position: absolute;
-    width: 90%;
-    height: 95%;
-    position: absolute;
-    bottom: 0;
-    right: 100;
-    margin-right: -20rem;
-    margin-bottom: -2rem;
-    opacity: .7;
-}
-    .home .collageimg{
+
+    .presentation .arbolnavidad {
+        width: 70%;
+        height: 85%;
+        bottom: 0;
+        right: 100;
+        margin-right: 0;
+        margin-bottom: -0;
+
+    }
+
+    .home .collageimg {
         width: 100%;
         height: 65%;
     }
-    .home .collageimg .carr{
+
+    .home .collageimg .carr {
         margin-top: 0vh;
         width: 100%;
         height: 100%;
-        }
-    
-    
-    .carr div:hover{
+    }
+
+
+    .carr div:hover {
         transform: scale(1.05);
         z-index: 5;
     }
 
-    .carr div img{
+    .carr div img {
         width: 100%;
         height: 100%;
         object-fit: cover;
