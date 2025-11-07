@@ -446,8 +446,9 @@
         height: 95%;
         bottom: 0;
         right: 0;
-        margin-right: -10rem;
+        margin-right: -7rem;
         margin-bottom: 0;
+        opacity: .5;
 
     }
 
