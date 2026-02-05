@@ -1,7 +1,7 @@
 const snowContainer = document.querySelector('#Lizvelvet'); // Seleccionar sección específica
 
 // Lista de íconos que quieres que caigan
-const icons = ["🎄", "❄️", "❄️", "⛄", "❄️", "❄️", "🌟", "🎅🏻"]
+const icons = ["💌", "💌", "💌", "❤️", "❤️", "💘", "💘", "🥰"]
 
 
 const createSnowflake = () => {
