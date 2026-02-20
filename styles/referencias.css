@@ -314,7 +314,7 @@
     height: 97%;
     display: grid;
     grid-template-columns: repeat(1, 100%);
-    grid-template-rows: repeat(14, 7%);
+    grid-template-rows: repeat(14, 6.8%);
     align-items: center;
     justify-content: center;
     gap: 1.85rem;
