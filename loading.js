@@ -3,7 +3,7 @@
 // ===============================
 // Cambia esta fecha por la fecha real de regreso del sitio.
 // Formato recomendado: AAAA-MM-DDTHH:MM:SS-06:00
-const launchDate = new Date("2026-07-15T09:00:00-06:00").getTime();
+const launchDate = new Date("2026-07-12T06:00:00-00:00").getTime();
 
 // Cambia este porcentaje de avance si quieres mostrar otro progreso.
 const progressPercent = 62;
@@ -16,15 +16,15 @@ const hoursEl = document.getElementById("hours");
 const minutesEl = document.getElementById("minutes");
 const secondsEl = document.getElementById("seconds");
 
-function formatNumber(number){
+function formatNumber(number) {
     return String(number).padStart(2, "0");
 }
 
-function updateCountdown(){
+function updateCountdown() {
     const now = new Date().getTime();
     const distance = launchDate - now;
 
-    if(distance <= 0){
+    if (distance <= 0) {
         daysEl.textContent = "00";
         hoursEl.textContent = "00";
         minutesEl.textContent = "00";
@@ -32,10 +32,10 @@ function updateCountdown(){
         return;
     }
 
-    const days = Math.floor(distance / (2000 * 60 * 60 * 24));
-    const hours = Math.floor((distance % (2000 * 60 * 60 * 24)) / (2000 * 60 * 60));
-    const minutes = Math.floor((distance % (2000 * 60 * 60)) / (2000 * 60));
-    const seconds = Math.floor((distance % (2000 * 60)) / 2000);
+    const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    const seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
     daysEl.textContent = formatNumber(days);
     hoursEl.textContent = formatNumber(hours);
