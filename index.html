@@ -1,73 +1,479 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Liz Velvet Studio</title>
-    <meta name="description" content="Liz Velvet Studio está actualizando su sitio web. Próximamente tendremos una nueva experiencia digital." />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Pacifico&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="loading.css" />
-</head>
-<body>
-    <main class="maintenance-page">
-        <div class="decor decor-one"></div>
-        <div class="decor decor-two"></div>
-        <div class="decor-line line-one"></div>
-        <div class="decor-line line-two"></div>
-        <div class="decor-line line-three"></div>
-
-        <section class="maintenance-card">
-            <span class="status-pill">Sitio en actualización</span>
-
-            <h1>Estamos renovando nuestra experiencia digital</h1>
-
-            <p class="intro">
-                Nuestro sitio web está recibiendo mejoras para brindarte una experiencia más moderna, rápida y elegante.
-                Muy pronto estaremos de regreso con una nueva imagen.
-            </p>
-
-            <div class="countdown" aria-label="Contador regresivo para finalizar mantenimiento">
-                <div class="time-box">
-                    <strong id="days">00</strong>
-                    <span>Días</span>
-                </div>
-                <div class="time-box">
-                    <strong id="hours">00</strong>
-                    <span>Horas</span>
-                </div>
-                <div class="time-box">
-                    <strong id="minutes">00</strong>
-                    <span>Min</span>
-                </div>
-                <div class="time-box">
-                    <strong id="seconds">00</strong>
-                    <span>Seg</span>
-                </div>
-            </div>
-
-            <div class="progress-wrapper" aria-label="Progreso de actualización del sitio">
-                <div class="progress-info">
-                    <span>Actualización del sitio</span>
-                    <strong id="progressText">62%</strong>
-                </div>
-                <div class="progress-bar">
-                    <div class="progress-fill" id="progressFill"></div>
-                </div>
-            </div>
-
-            <div class="action-buttons">
-                <a class="btn btn-primary" href="https://wa.me/+524482015506" target="_blank" rel="noopener">
-                    Contactar por WhatsApp
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Liz Velvet Studio</title>
+        <meta name="description" content="Landing page moderna para Liz Velvet Studio: servicios de belleza, pestañas, uñas, maquillaje y academia profesional.">
+        <link rel="preconnect" href="https://images.unsplash.com">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="icon" href="/img/ceja.png" type="image/png">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Playfair+Display:wght@600;700&family=Pacifico&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <header class="site-header">
+            <nav class="navbar">
+                <a href="#inicio" class="brand" aria-label="Liz Velvet Studio Inicio">
+                    <img src="/img/logo.png" alt="Logotipo">
                 </a>
-                <a class="btn btn-secondary" href="https://www.instagram.com/liz_velvet?igsh=MWkwNXNyZmFkY293ZA==" target="_blank" rel="noopener">
-                    Ver Instagram
-                </a>
+                <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <div class="nav-links" id="navLinks">
+                    <a href="#servicios">Servicios</a>
+                    <a href="#especialidades">Especialidades</a>
+                    <a href="#academia">Academia</a>
+                    <a href="#comunidad">Comunidad</a>
+                    <a href="#contacto">Contacto</a>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <!-- HERO -->
+            <section class="hero section-bg-soft" id="inicio">
+                <div class="hero-shape shape-one"></div>
+                <div class="hero-shape shape-two"></div>
+                <div class="container hero-grid">
+                    <div class="hero-content reveal">
+                        <span class="eyebrow">Belleza profesional · Academia certificada</span>
+                        <h1>
+                            Eleva tu belleza
+                            <span>a otro nivel</span>
+                        </h1>
+                        <p>
+                            Servicios especializados en pestañas, uñas, formación y técnica profesional para quienes buscan
+            resultados elegantes, detallados y con técnica.
+                        </p>
+                        <div class="hero-actions">
+                            <a href="#contacto" class="btn btn-primary">Agenda tu cita</a>
+                            <a href="#academia" class="btn btn-secondary">Ver cursos</a>
+                        </div>
+                        <div class="hero-stats" aria-label="Estadisticas de Liz Velvet Studio">
+                            <article>
+                                <strong data-count="100">0</strong>
+                                <span>Clientes satisfechos</span>
+                            </article>
+                            <article>
+                                <strong data-count="18">0</strong>
+                                <span>Alumnas certificadas</span>
+                            </article>
+                            <article>
+                                <strong data-count="20">0</strong>
+                                <span>Especialidades</span>
+                            </article>
+                        </div>
+                    </div>
+                    <div class="hero-visual reveal delay-1">
+                        <div class="hero-card hero-main-photo">
+                            <img src="/img/fotoperfil.jpeg" alt="Aplicacion de profesionales">
+                        </div>
+                        <div class="floating-card card-top">
+                            <img src="/img/hero-two.jpg" alt="Trabajo de pestanas">
+                        </div>
+                        <div class="floating-card card-bottom">
+                            <img src="/img/hero-three.jpg" alt="Trabjo de uñas">
+                        </div>
+                        <img src="/img/sello.png" alt="Certificado Profesional" class="hero-badge">
+                    </div>
+                </div>
+            </section>
+            <!-- SOBRE -->
+            <section class="about section" id="servicios">
+                <div class="container split-grid">
+                    <div class="image-stack reveal">
+                        <img src="/img/interior.jpg" alt="Estudio de belleza con productos profesionales">
+                        <div class="accent-box"></div>
+                    </div>
+                    <div class="section-copy reveal delay-1">
+                        <span class="section-kicker">¿Que es Liz Velvet?</span>
+                        <h2>Un espacio donde la belleza se trabaja con detalle, técnica y estilo.</h2>
+                        <p>
+                            Liz Velvet Studio combina servicios personalizados, productos de calidad y formación profesional para
+            realzar la belleza natural de cada persona y preparar nuevas especialistas en el sector.
+                        </p>
+                        <div class="benefits-grid">
+                            <span>Extensiones de pestañas</span>
+                            <span>Diseño de uñas</span>
+                            <span>Maquillaje profesional</span>
+                            <span>Peinados profesionales</span>
+                            <span>Colorimetria especializada</span>
+                            <span>Cursos especializados</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- SERVICIOS -->
+            <section class="services section section-bg-soft" id="especialidades">
+                <div class="container">
+                    <div class="section-heading reveal">
+                        <span class="section-kicker">Especialidades</span>
+                        <h2>Especialidades para resaltar tu mejor versión</h2>
+                        <p>Una experiencia cuidada en cada detalle, desde el diagnóstico hasta el resultado final.</p>
+                    </div>
+                    <div class="services-grid">
+                        <article class="service-card reveal card-one">
+                            <img src="/img/setclassic.JPG" alt="Aplicación profesional de pestañas">
+                            <div>
+                                <h3>Set Classic</h3>
+                                <p>Conserva la sencillez, aportando mayor longitud y un hermoso rizado.</p>
+                            </div>
+                        </article>
+                        <article class="service-card reveal delay-1">
+                            <img src="/img/sethawai.jpg" alt="Aplicación profesional de pestañas estilo Hawai">
+                            <div>
+                                <h3>Set Hawai</h3>
+                                <p>Fibras en forma de YY con efecto cruzado y voluminoso</p>
+                            </div>
+                        </article>
+                        <article class="service-card reveal delay-2">
+                            <img src="/img/setaura.jpeg" alt="Aplicación de pestañas estilo aura">
+                            <div>
+                                <h3>Set Aura</h3>
+                                <p>U shapad actualizado con acabado natural perfecto.</p>
+                            </div>
+                        </article>
+                        <article class="service-card reveal delay-3">
+                            <img src="/img/setcleang.png" alt="Aplicación de pestañas estilo clean">
+                            <div>
+                                <h3>Set Clean Girl</h3>
+                                <p>Volumen ligero, luce tus ojos con pestañas mas abundantes.</p>
+                            </div>
+                        </article>
+                        <article class="service-card reveal delay-3">
+                            <img src="/img/acrilicas.JPG" alt="">
+                            <div>
+                                <h3>Acrilicas</h3>
+                                <p>Forma uñas más largas, gruesas y resistentes.</p>
+                            </div>
+                        </article>
+                        <article class="service-card reveal delay-3">
+                            <img src="/img/espressgel.JPG" alt="">
+                            <div>
+                                <h3>Express Gel</h3>
+                                <p>Esmalte con diselo perfecto y más ligero.</p>
+                            </div>
+                        </article>
+                        <article class="service-card reveal delay-3">
+                            <img src="/img/semipermanente.JPG" alt="">
+                            <div>
+                                <h3>Gel Semipermanente</h3>
+                                <p>Manicura perfecta y pulcra con esmalte en uñas naturales.</p>
+                            </div>
+                        </article>
+                        <article class="service-card reveal delay-3">
+                            <img src="/img/babylights.JPG" alt="">
+                            <div>
+                                <h3>Babylights</h3>
+                                <p>Mechas perfectas que iluminan el cabello, finas e inperceptibles.</p>
+                            </div>
+                        </article>
+                        <article class="service-card reveal delay-3">
+                            <img src="/img/taninoplastia.JPG" alt="">
+                            <div>
+                                <h3>Taninoplastia</h3>
+                                <p>Fusión innovadora con acabado sedoso y lacio natural.</p>
+                            </div>
+                        </article>
+                        <article class="service-card reveal delay-3">
+                            <img src="/img/cortinas.JPG" alt="">
+                            <div>
+                                <h3>Cortinas</h3>
+                                <p>Tecnica de teñido sutil y degradada con efecto cortina.</p>
+                            </div>
+                        </article>
+                        <article class="service-card reveal delay-3">
+                            <img src="/img/brasilena.JPG" alt="">
+                            <div>
+                                <h3>Brasileña</h3>
+                                <p>Factor nutrición con efecto brillante y protección al daño.</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+            <!-- ACADEMIA -->
+            <section class="academy section" id="academia">
+                <div class="container academy-layout">
+                    <div class="section-copy reveal">
+                        <span class="section-kicker">Academia Liz Velvet</span>
+                        <h2>Aprende una técnica rentable, profesional y lista para emprender.</h2>
+                        <p>
+                            Cursos prácticos para principiantes y profesionales que desean perfeccionar su técnica, ampliar servicios y
+            mantenerse al día con tendencias actuales.
+                        </p>
+                        <br>
+                        <a href="#contacto" class="btn btn-primary">Solicitar información</a>
+                    </div>
+                    <div class="course-list reveal delay-1">
+                        <article class="course-card featured">
+                            <div class="course-top">
+                                <span>Curso inicial</span>
+                                <strong>Pestañas</strong>
+                            </div>
+                            <ul>
+                                <li>Formación teórico-práctica</li>
+                                <li>Horarios flexibles</li>
+                                <li>Certificación internacional al finalizar</li>
+                                <li>Material de apoyo incluido</li>
+                            </ul>
+                            <a href="/documents/pestanas_inicial.pdf" target="_blank">Consultar temario</a>
+                        </article>
+                        <article class="course-card">
+                            <div class="course-top">
+                                <span>Curso avanzado</span>
+                                <strong>Pestañas</strong>
+                            </div>
+                            <ul>
+                                <li>Aplicaciones avanzadas</li>
+                                <li>Horarios flexibles</li>
+                                <li>Certificación internacional al finalizar</li>
+                                <li>Material completo incluido</li>
+                            </ul>
+                            <a href="/documents/pestanas_avanzado.pdf" target="_blank">Consultar temario</a>
+                        </article>
+                        <article class="course-card">
+                            <div class="course-top">
+                                <span>Curso inicial</span>
+                                <strong>Uñas</strong>
+                            </div>
+                            <ul>
+                                <li>Formación teórico-práctica</li>
+                                <li>Horarios flexibles</li>
+                                <li>Certificación internacional al finalizar</li>
+                                <li>Material de apoyo incluido</li>
+                            </ul>
+                            <a href="/documents/inicial_unas.pdf" target="_blank">Consultar temario</a>
+                        </article>
+                    </div>
+                </div>
+            </section>
+            <!-- GALERIA -->
+            <section class="gallery section section-bg-soft">
+                <div class="container">
+                    <div class="section-heading reveal">
+                        <span class="section-kicker">Nuestro trabajo</span>
+                        <h2>Resultados que hablan por sí mismos</h2>
+                    </div>
+                    <div class="gallery-grid reveal delay-1">
+                        <img src="/img/collage/4.jpeg" alt="Maquillaje y belleza profesional">
+                        <img src="/img/collage/8.jpeg" alt="Maquillaje profesional">
+                        <img src="/img/collage/20.jpeg" alt="Diseno de unas">
+                        <img src="/img/collage/12.jpeg" alt="Aplicacion de pestañas profesional">
+                        <img src="/img/collage/9.jpeg" alt="Diseno de unas">
+                        <img src="/img/collage/24.jpeg" alt="Aplicacion de pestañas profesional">
+                        <img src="/img/collage/5.jpeg" alt="Diseno de unas">
+                        <img src="/img/collage/22.jpeg" alt="Aplicacion de pestañas profesional">
+                        <img src="/img/collage/10.jpeg" alt="Aplicacion de pestañas profesional">
+                    </div>
+                </div>
+            </section>
+            <!-- COMUNIDAD -->
+            <section class="community section" id="comunidad">
+                <div class="container">
+                    <div class="section-heading reveal">
+                        <span class="section-kicker">Nuestra comunidad</span>
+                        <h2>Alumnas que llevan su técnica al siguiente nivel</h2>
+                    </div>
+                    <div class="community-slider reveal delay-1" id="communitySlider">
+                        <article class="student-card">
+                            <img src="/img/alumnas/estefania.jpeg" alt="Alumna certificada">
+                            <h3>LVA001 | Estefania Ramírez</h3>
+                            <p>Lashista, manicurista</p>
+                            <span>Pedro Escobedo</span>
+                        </article>
+                        <article class="student-card">
+                            <img src="/img/alumnas/gabriela.jpeg" alt="Alumna certificada">
+                            <h3>LVA002 | Gabriela Martinez</h3>
+                            <p>Lashista, brushin, manicurista</p>
+                            <span>Pedro Escobedo</span>
+                        </article>
+                        <article class="student-card">
+                            <img src="/img/alumnas/araceli.jpeg" alt="Alumna certificada">
+                            <h3>LVA003 | Araceli Sanchez</h3>
+                            <p>Lashista</p>
+                            <span>Pedro Escobedo</span>
+                        </article>
+                        <article class="student-card">
+                            <img src="/img/alumnas/fernanda.jpeg" alt="Alumna certificada">
+                            <h3>LVA004 | Fernanda Arista</h3>
+                            <p>Lashista</p>
+                            <span>Pedro Escobedo</span>
+                        </article>
+                        <article class="student-card">
+                            <img src="/img/alumnas/jesica.jpeg" alt="Alumna certificada">
+                            <h3>LVA005 | Jesica Isamar</h3>
+                            <p>Lashista</p>
+                            <span>Pedro Escobedo</span>
+                        </article>
+                        <article class="student-card">
+                            <img src="/img/alumnas/jazmin.jpeg" alt="Alumna certificada">
+                            <h3>LVA008 | Jazmin Grifaldo</h3>
+                            <p>Lashista</p>
+                            <span>Pedro Escobedo</span>
+                        </article>
+                        <article class="student-card">
+                            <img src="/img/alumnas/alondra.jpeg" alt="Alumna certificada">
+                            <h3>LVA009 | Alondra Pérez</h3>
+                            <p>Lashista</p>
+                            <span>Pedro Escobedo</span>
+                        </article>
+                        <article class="student-card">
+                            <img src="/img/alumnas/marisol.jpeg" alt="Alumna certificada">
+                            <h3>LVA010 | Marisol Cruz</h3>
+                            <p>Lashista</p>
+                            <span>Pedro Escobedo</span>
+                        </article>
+                        <article class="student-card">
+                            <img src="/img/alumnas/regina.jpeg" alt="Alumna certificada">
+                            <h3>LVA011 | Diana Regina</h3>
+                            <p>Manicurista</p>
+                            <span>Pedro Escobedo</span>
+                        </article>
+                        <article class="student-card">
+                            <img src="/img/alumnas/violeta.jpeg" alt="Alumna certificada">
+                            <h3>LVA012 | Violeta Almaraz</h3>
+                            <p>Lashista</p>
+                            <span>Pedro Escobedo</span>
+                        </article>
+                        <article class="student-card">
+                            <img src="/img/alumnas/mariadelcarmen.jpeg" alt="Alumna certificada">
+                            <h3>LVA013 | Carmen Vega</h3>
+                            <p>Manicurista</p>
+                            <span>Pedro Escobedo</span>
+                        </article>
+                        <article class="student-card">
+                            <img src="/img/alumnas/nazaret.jpeg" alt="Alumna certificada">
+                            <h3>LVA014 | Nazaret García</h3>
+                            <p>Brushing</p>
+                            <span>Pedro Escobedo</span>
+                        </article>
+                        <article class="student-card">
+                            <img src="/img/alumnas/casandra.jpeg" alt="Alumna certificada">
+                            <h3>LVA015 | Casandra Flores</h3>
+                            <p>Manicurista</p>
+                            <span>Pedro Escobedo</span>
+                        </article>
+                        <article class="student-card">
+                            <img src="/img/alumnas/lupita.jpeg" alt="Alumna certificada">
+                            <h3>LVA016 | Guadalupe Sanchez</h3>
+                            <p>Manicurista</p>
+                            <span>Pedro Escobedo</span>
+                        </article>
+                        <article class="student-card">
+                            <img src="/img/alumnas/ruth.jpg" alt="Alumna certificada">
+                            <h3>LVA017 | Ana Ruth</h3>
+                            <p>Lashista</p>
+                            <span>Pedro Escobedo</span>
+                        </article>
+                        <article class="student-card">
+                            <img src="/img/alumnas/joana.jpg" alt="Alumna certificada">
+                            <h3>LVA018 | Joana Evangelista</h3>
+                            <p>Lashista</p>
+                            <span>Pedro Escobedo</span>
+                        </article>
+                        <article class="student-card">
+                            <img src="/img/alumnas/monse.jpeg" alt="Alumna certificada">
+                            <h3>LVA019 | Montserrat Monera</h3>
+                            <p>Manicurista, lashista</p>
+                            <span>Pedro Escobedo</span>
+                        </article>
+                        <article class="student-card">
+                            <img src="/img/alumnas/josselyn.jpeg" alt="Alumna certificada">
+                            <h3>LVA021 | Josselyn Pérez</h3>
+                            <p>Manicurista</p>
+                            <span>Pedro Escobedo</span>
+                        </article>
+                        <article class="student-card">
+                            <img src="/img/alumnas/estrella.jpeg" alt="Alumna certificada">
+                            <h3>LVA022 | Estrella Martínez</h3>
+                            <p>Manicurista</p>
+                            <span>Pedro Escobedo</span>
+                        </article>
+                        <article class="student-card">
+                            <img src="/img/alumnas/fernandag.jpeg" alt="Alumna certificada">
+                            <h3>LVA023 | Fernanda Gómez</h3>
+                            <p>Manicurista</p>
+                            <span>Pedro Escobedo</span>
+                        </article>
+                        <article class="student-card">
+                            <img src="/img/alumnas/dolores.jpeg" alt="Alumna certificada">
+                            <h3>LVA024 | Dolores Faustino</h3>
+                            <p>Brushing</p>
+                            <span>Pedro Escobedo</span>
+                        </article>
+                        <article class="student-card">
+                            <img src="/img/alumnas/monica.jpeg" alt="Alumna certificada">
+                            <h3>LVA025 | Mónica Vega</h3>
+                            <p>Manicurista</p>
+                            <span>Pedro Escobedo</span>
+                        </article>
+                    </div>
+                </div>
+            </section>
+            <!-- CONTACTO -->
+            <section class="contact section section-bg-soft" id="contacto">
+                <div class="container contact-grid">
+                    <div class="contact-card reveal">
+                        <span class="section-kicker">Visítanos</span>
+                        <h2>Agenda tu cita o solicita información de cursos</h2>
+                        <p>Manuel Avila Camacho #5, Guadalupe Septién, Pedro Escobedo, Querétaro</p>
+                        <div class="contact-actions">
+                            <a
+                                class="btn btn-primary"
+                                href="https://wa.me/+524482015506"
+                                target="_blank"
+                                rel="noopener"
+                            >
+                                Enviar WhatsApp
+                            </a>
+                            <a
+                                class="btn btn-secondary"
+                                href="https://www.instagram.com/liz_velvet?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+                                target="_blank"
+                                rel="noopener"
+                            >
+                                Abrir Instagram
+                            </a>
+                        </div>
+                        <div class="contact-info">
+                            <span>Horario sugerido: Lunes a Sabado</span>
+                            <span>Servicios · Academia · Certificaciones</span>
+                        </div>
+                    </div>
+                    <div class="map-card reveal delay-1">
+                        <iframe title="Mapa Liz Velvet Studio" src="https://www.google.com/maps?q=Manuel%20Avila%20Camacho%205%20Guadalupe%20Septien%20Pedro%20Escobedo%20Queretaro&output=embed" loading="lazy"></iframe>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="container footer-grid">
+                <div>
+                    <a href="#inicio" class="brand footer-brand">LizVelvet - Todos los derechos reservados 2026</a>
+                    <p>Perfección brillando en cada detalle.</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#servicios">Servicios</a>
+                    <a href="#academia">Academia</a>
+                    <a href="#comunidad">Comunidad</a>
+                    <a href="#contacto">Contacto</a>
+                </div>
             </div>
-        </section>
-    </main>
-
-    <script src="loading.js"></script>
-</body>
+        </footer>
+        <a
+            class="whatsapp-float"
+            href="https://wa.me/+524482015506"
+            target="_blank"
+            rel="noopener"
+            aria-label="Contactar por WhatsApp"
+        >
+            <i class="fa-brands fa-whatsapp"></i>
+        </a>
+        <script src="script.js"></script>
+    </body>
 </html>
