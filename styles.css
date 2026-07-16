@@ -575,7 +575,7 @@ a {
 }
 
 .student-card img {
-    height: 280px;
+    height: 320px;
     width: 100%;
     object-fit: cover;
     object-position: top;
@@ -892,6 +892,13 @@ a {
         scroll-snap-align: center;
     }
 
+    .student-card img {
+        height: 380px;
+        width: 100%;
+        object-fit: cover;
+        object-position: top;
+    }
+
     .student-card:first-child {
         margin-left: 1.9rem;
     }
@@ -930,8 +937,8 @@ a {
         border: 0;
     }
 
-    .hero-visual{
-        display:none;
+    .hero-visual {
+        display: none;
     }
 
 
