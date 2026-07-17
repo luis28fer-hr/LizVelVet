@@ -449,9 +449,11 @@ a {
 
 .services-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 22px;
+    justify-content: center;
 }
+
 
 .service-card {
     background: #fff;
@@ -467,7 +469,7 @@ a {
 }
 
 .service-card img {
-    height: 245px;
+    height: 400px;
     width: 100%;
     object-fit: cover;
 }
